@@ -1,0 +1,104 @@
+#
+#          █▄
+#          ███▄
+#          ███▀█▄
+#          ███  ▀█▄              █
+#          ███   ███             █     ▄              ▄▄▄
+#          ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
+#          ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
+#          ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
+#          ███   ███                █             ▄▄▄▄▄▄▄█▀
+#          ███   ███
+#          ███   █▀
+#          ███         ▄████▄   ███▄ ▄███▓ █    ██   ██████
+#          ███        ▒██▀ ▀█  ▓██▒▀█▀ ██▒ ██  ▓██▒▒██    ▒
+#          █▀         ▒▓█    ▄ ▓██    ▓██░▓██  ▒██░░ ▓██▄
+#                     ▒▓▓▄ ▄██▒▒██    ▒██ ▓▓█  ░██░  ▒   ██▒
+#                     ▒ ▓███▀ ░▒██▒   ░██▒▒▒█████▓ ▒██████▒▒
+#                     ░ ░▒ ▒  ░░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░
+#                       ░  ▒   ░  ░      ░░░▒░ ░ ░ ░ ░▒  ░ ░
+#                     ░        ░      ░    ░░░ ░ ░ ░  ░  ░
+#                     ░ ░             ░      ░           ░
+#                      ░ ▄▄▄█████▓ ██░ ██ ▓█████  ███▄ ▄███▓▓█████
+#                         ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀ ▓██▒▀█▀ ██▒▓█   ▀
+#                         ▒ ▓██░ ▒░▒██▀▀██░▒███   ▓██    ▓██░▒███
+#                         ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄ ▒██    ▒██ ▒▓█  ▄
+#                           ▒██▒ ░ ░▓█▒░██▓░▒████▒▒██▒   ░██▒░▒████▒
+#                           ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░░ ▒░   ░  ░░░ ▒░ ░
+#                             ░     ▒ ░▒░ ░ ░ ░  ░░  ░      ░ ░ ░  ░
+#                           ░       ░  ░░ ░   ░   ░      ░      ░
+#                                   ░  ░  ░   ░  ░       ░      ░  ░
+
+
+
+#▁▁▁▁▁▁▁▁▁▁
+#▌ colors ▐
+#▔▔▔▔▔▔▔▔▔▔
+
+# 1 -red
+# 2 - green
+# 10 - green
+# 5 - pink
+# 6 - blue
+# 12 - purple
+# 14 - cyan
+# 15 - white
+# 233 - grey
+# 234 - background
+
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ command line ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_cmdline_bg=234
+set color_cmdline_fg=15
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ error, info and separator ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_error=1
+set color_info=1
+set color_separator=234
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ status line (time, volume etc.) ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_statusline_bg=234
+set color_statusline_fg=10
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ title: song title, album etc. ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_titleline_bg=234
+set color_titleline_fg=10
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ MAIN bg and fg color ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_bg=234
+set color_win_fg=5
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ fg of playing item/album in all views ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_cur=10
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ fg in add to library (5) view ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_dir=10
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ top of the windwos artist/album track ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_title_bg=236
+set color_win_title_fg=10
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ current selection  ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_sel_bg=6
+set color_win_sel_fg=234
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ current inactive selection ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_inactive_cur_sel_bg=234
+set color_win_inactive_cur_sel_fg=2
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ cursor on current selection ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+set color_win_cur_sel_bg=6
+set color_win_cur_sel_fg=234
+set color_win_inactive_sel_bg=234
+set color_win_inactive_sel_fg=6

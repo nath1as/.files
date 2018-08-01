@@ -1,0 +1,52 @@
+[options]
+font = Hack 16
+urgent_on_bell = false
+allow_bold = true
+scrollback_lines = 5000
+search_wrap = true
+cursor_blink = system
+cursor_shape = block
+browser = firefox
+clickable_url = true
+hyperlinks = true
+size_hints = 30
+
+[colors]
+
+# special
+foreground      = #D4BEBE
+foreground_bold = #33ccee
+cursor          = #20ad80
+background      = #1c1c1c
+
+# black
+color0  = #333
+color8  = #333
+
+# red
+color1  = #ee3333
+color9  = #ee3333
+
+# green
+color2  = #20ad80
+color10 = #20ad80
+
+# yellow
+color3  = #dd75dd
+color11 = #dd75dd
+
+# magenta
+color4  = #875faf
+color12 = #875faf
+
+# blue
+color5  = #d75f87
+color13 = #d75f87
+
+# cyan
+color6  = #4f97d7
+color14 = #4f97d7
+
+# white
+color7  = #ececec
+color15 = #ececec

@@ -1,0 +1,82 @@
+# vim like navigation
+bind-key j down
+bind-key k up
+bind-key m toggle-show-read-feeds
+bind-key ^D pagedown
+bind-key ^U pageup
+bind-key / open-search tagselection
+
+bind-key i sort
+bind-key I rev-sort
+
+bind-key g home all
+bind-key G end all
+
+unbind-key l
+bind-key l open
+bind-key h quit
+bind-key ESC hard-quit
+
+bind-key o open-in-browser
+bind-key ENTER open
+
+feedlist-title-format "%6t feeds"
+feedlist-format " %n %4i %11u %t -- %T"
+articlelist-format  "%4i %f %D   %?T?|%-17T|  ?%t"
+articlelist-title-format "%T %u unread, %t total - %U"
+notify-format "%d new articles (%n unread articles, %f unread feeds)"
+
+browser "/usr/bin/w3m %u"
+player "cmus-remote -C :add ~Downloads/%n"
+
+refresh-on-startup yes
+show-keymap-hint yes
+mark-as-read-on-hover no
+goto-first-unread no
+goto-next-feed no
+prepopulate-query-feeds yes
+reset-unread-on-update "*"
+openbrowser-and-mark-jumps-to-next-unread yes
+
+download-path "~/Downloads/%n"
+max-downloads 2
+
+color article default default
+color background default default
+color listnormal_unread default default
+color listnormal default default
+color listfocus white cyan
+color listfocus_unread black cyan bold
+color info black green bold
+
+
+browser $BROWSER
+save-path ~/Downloads
+
+#-------- macros {{{
+#------------------------------------------------------
+# Note: macro prefix key ( default: , )
+
+bind-key ` macro-prefix
+# open in cli web browser
+# w3m: https://www.youtube.com/watch?v=Z22cFTB-uqg
+# tmux: https://www.youtube.com/watch?v=ZNM1KfqpyGo
+  macro o set browser "$BROWSERCLI %u"; open-in-browser ; set browser "$BROWSER %u"
+# macro o set browser "tmux split-window && tmux send-keys '$BROWSERCLI %u && tmux kill-pane\n'"; open-in-browser ; set browser "$BROWSER %u"
+
+# read reddit comments with rtv (reddit terminal viewer)
+# rtv: https://www.youtube.com/watch?v=jc2ZVSof5-g
+  macro r set browser "rtv -l %u"; open-in-browser ; set browser "$BROWSER %u"
+# macro r set browser "tmux split-window && tmux send-keys 'rtv -l %u && tmux kill-pane\n'"; open-in-browser ; set browser "$BROWSER %u"
+
+# add video or audio to play queue using mpv (requires: task-spooler, mpv, youtube-dl)
+# task-spooler: https://www.youtube.com/watch?v=wv8D8wT20ZY
+# youtube-dl: https://www.youtube.com/watch?v=MFxlwVhwayg
+ macro p set browser "tsp mpv --ontop --no-border --force-window --autofit=500x280 --geometry=-15-10 %u"; open-in-browser ; set browser "$BROWSER %u"
+
+# copy url to clipboard "yank"
+# xclip: https://www.youtube.com/watch?v=fKP0FLp3uW0
+macro y set browser "echo -n %u | xclip -selection clipboard"; open-in-browser ; set browser "$BROWSER %u"
+
+
+# }}}

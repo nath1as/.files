@@ -1,0 +1,61 @@
+quit
+continue
+quit
+continue
+quit
+aaa
+afl
+af?
+af
+afl
+s sym.main 
+pdf
+VV
+:q
+quit
+s sym.main 
+aaaaa
+pdf
+VV
+df
+dc
+:dc
+dc
+VV
+pdf
+s sys.main
+ls
+license_1
+run license_1
+r2 ./license_1
+q
+s sym.main
+aaaa
+pdf
+VV
+dc
+q
+s sym.main
+aaaaa
+pdf
+db 0x004005bd
+VV
+dc
+pdf
+q
+aaaaaa
+pdf
+VV
+q
+s sys.main
+s sym.main
+aaaaaa
+pdf
+VV
+q
+s sym.main
+aaaa
+pdf
+VV
+QQ
+q
