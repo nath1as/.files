@@ -78,7 +78,7 @@ URxvt.letterSpace: -1
 
 ! rofi settings
  rofi.theme: inline
- rofi.terminal: alacritty
+ rofi.terminal: urxvt
  rofi.show-icons: true
  rofi.location: 1  
  rofi.xoffset: 413px
