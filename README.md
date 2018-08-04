@@ -21,6 +21,10 @@
 
 # ZSH
 
+Installed packages:
+* zsh
+* zsh-sytax-highlighting-git
+
 ## Athame vim mode
 Athame patches your shell to add full Vim support by routing your keystrokes through an actual Vim process.
 https://github.com/ardagnir/athame
@@ -127,3 +131,85 @@ Installed scripts:
 * urlserver
 * vimode
 * weestreamer
+
+
+# OTHER PACKAGES
+
+## PROGRAMS
+* asperite
+* krita
+* ranger
+* neomutt
+* newsboat
+* mpv
+* feh
+* calibre
+* radare2
+* keybase
+* docker
+* steam
+* w3m
+* surfraw
+* lynx
+* toxic
+* tig
+* tmux
+* tusk
+* rtorrent
+
+## INFO
+* whatis
+* tldr
+
+## CLI TOOLS
+* glances
+* htop-vim-git
+* iftop
+* nbwmon
+* iotop
+* atop
+* clamav (freshclam)
+* rkhunter
+* xclip
+* yay
+* rsync
+* networkmanager
+
+
+## DISK
+* ncdu
+* dfc
+
+## WEB IN CLI
+* rtv (reddit in cli)
+* twitch-curses (twitch in cli)
+* (youtube in cli)
+* (twitter in cli)
+
+## ASCII 
+* lolcat
+* bash-pipes
+* curl parrot.live
+
+## PROGRAMMING
+* pgcli
+* bpython
+
+## UX
+* dunst
+* rofi
+* i3-gaps
+* i3lock-fancier-git
+* lxappearance
+
+## FONTS
+* otf-font-awsome
+* otf-hack
+* /rxvt-unicode-cvs-patched-wideglyphs/
+* otf-powerline-symbols-git
+* nerd-fonts-complete-mono-glyphs
+* noto fonts emoji
+
+
+
+btw, I use Arch
