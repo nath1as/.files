@@ -82,15 +82,48 @@ Zsh plugin for colorization for various programs.
 https://github.com/zpm-zsh/colors
 
 # URXVT
+ Vim mode on Alt + Esc, jump to link on Alt + u. 
+ Can run as daemon for increased performance.
 
-# VIM
+ Installed packages:
+* rxvt-unicode-terminfo
+* rxvt-perls
+* urxvt-resize-font-git
+* rxvt-unicode-pixbuf
 
-# i3
+# NEOVIM
+Neovim Vim-fork focused on extensibility and usability.
 
-# POLYBAR
 
-# FIREFOX
+## Vim-Plug plugin manager
+Minimalist Vim Plugin Manager 
 
-# CMUS
+https://github.com/junegunn/vim-plug
+
+# FIREFOX NIGHTLY
+Installed packages:
+* firefox-nightly
+* firefox-hardening
+* shadowfox-updater
 
 # WEECHAT
+Installed packages:
+* weechat
+* bitlbee-discord-git
+* bitlbee-facebook
+* bitlbee-libpurple
+* bitlbee-mastodon-git
+* bitlbee-steam-git
+
+Installed scripts:
+* colorize_lines
+* autosort
+* automerge
+* bitlbee_completion
+* buffer_dmenu
+* cmus
+* go
+* twitch
+* urlserver
+* vimode
+* weestreamer
