@@ -135,33 +135,21 @@ Installed scripts:
 
 # OTHER PACKAGES
 
-## PROGRAMS
-* asperite
-* krita
 * ranger
 * neomutt
 * newsboat
 * mpv
 * feh
-* calibre
 * radare2
 * keybase
-* docker
 * steam
-* w3m
-* surfraw
-* lynx
-* toxic
 * tig
 * tmux
-* tusk
 * rtorrent
-
-## INFO
+* scrot
 * whatis
 * tldr
-
-## CLI TOOLS
+* howdoi
 * glances
 * htop-vim-git
 * iftop
@@ -174,42 +162,41 @@ Installed scripts:
 * yay
 * rsync
 * networkmanager
-
-
-## DISK
 * ncdu
 * dfc
-
-## WEB IN CLI
 * rtv (reddit in cli)
 * twitch-curses (twitch in cli)
-* (youtube in cli)
-* (twitter in cli)
-
-## ASCII 
-* lolcat
-* bash-pipes
-* curl parrot.live
-
-## PROGRAMMING
+* mps-youtube (youtube in cli)
+* turses(twitter in cli)
+* w3m
+* surfraw
+* lynx
+* toxic
+* weechat
 * pgcli
 * bpython
-
-## UX
+* docker
+* pandoc
+* mupdf
+* calibre
+* tusk
+* asperite
+* krita
 * dunst
 * rofi
+* polybar
+* i3
 * i3-gaps
 * i3lock-fancier-git
 * lxappearance
-
-## FONTS
 * otf-font-awsome
 * otf-hack
 * /rxvt-unicode-cvs-patched-wideglyphs/
 * otf-powerline-symbols-git
 * nerd-fonts-complete-mono-glyphs
 * noto fonts emoji
-
-
+* lolcat
+* bash-pipes
+* curl parrot.live
 
 btw, I use Arch
