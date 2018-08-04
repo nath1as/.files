@@ -1,0 +1,101 @@
+inbar input colors*/
+#vomnibar input {
+  color: #0a84ff !important;
+  font-family: Hack !important;
+  font-weight: bold;
+  font-size: 18px;
+  height: 60px;
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: #0e1215 !important;
+
+  border: none !important;
+  box-shadow: #444 0px 0px 0px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*vomnibar list colors*/
+#vomnibar ul {
+  background-color: #0e1215 !important;
+  color: white !important;
+  border-radius: 0 0 4px 4px;
+  list-style: none;
+  padding: 10px 0;
+  padding-top: 0;
+}
+
+#vomnibar {
+    border: none !important;
+  }
+
+/*vomnibar bacground etc. */
+#vomnibar .vomnibarSearchArea {
+display: block;
+padding: 2px;
+background-color: #0e1215 !important;
+border: none !important;
+}
+
+/*source text color*/
+#vomnibar li .vomnibarSource {
+  color: purple !important;
+  margin-right: 4px;
+  border: none !important;
+  font-family: Hack;
+  font-size: 18;
+  font-weight: bold;
+}
+
+/*no more border*/
+#vomnibar li {
+border: none !important;
+  font-family: Hack;
+  font-size: 18;
+}
+
+#vomnibar li.vomnibarSelected {
+
+  background: linear-gradient(to right, #00d2d6, #0a84ff, #785eff) !important;
+}
+#vomnibar li .vominbarTopHalf, #vomnibar li .vomnibarBottomHalf {
+ background:  !important;
+color:  !important;
+}
+
+#vomnibar li .vomnibarUrl {
+  color: #0a84ff !important;
+}
+
+#vomnibar li .vomnibariMatch {
+  color: #00d2d6 !important;
+}
+
+#vomnibar li .vomnibarTitle {
+  color: #785eff !important;
+  font-weight: bold;
+}
+
+
+div > .vimiumHintMarker {
+background: #00d2d6;
+border: 1px solid #000;
+text-shadow: none !important;
+box-shadow: none;
+padding: 3px;
+}
+
+div > .vimiumHintMarker span {
+color: #131313 !important;
+font-weight: bold;
+font-size: 13px;
+font-family: 'Hack' !important;
+text-transform: lowercase;
+padding: 0px;
+}
+
+div > .vimiumHintMarker > .matchingCharacter {
+color: purple !important;
+font-weight: bold;
+}
