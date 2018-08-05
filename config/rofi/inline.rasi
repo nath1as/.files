@@ -9,8 +9,6 @@
     font:            "I pixel u 16";
 }
 
-configuration {
-}
 
 #window {
     width:      100%;
