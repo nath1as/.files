@@ -48,7 +48,7 @@ font I-pixel-u 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvtc
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+q kill
@@ -206,4 +206,4 @@ assign [title="^WeeChat$"] 0
 # autostart
 exec --no-startup-id firefox-nightly
 #exec --no-startup-id alacritty -e cmus
-exec --no-startup-id urxvtc -e weechat
+exec --no-startup-id urxvt -e weechat
