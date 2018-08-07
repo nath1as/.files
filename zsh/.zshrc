@@ -148,6 +148,7 @@ GEOMETRY_SYMBOL_RUBY_RVM_VERSION="◆"
 #      ██ ◖ALIASES◗ ██
 #       █████████████
 
+alias ccat="pygmentize"
 alias zspeed="time zsh -i -c exit"
 alias nths="clear && cat /home/nathias/Ascii/nathiasASCII.ascii | lolcat"
 alias ls="ls --color=auto"
@@ -163,7 +164,7 @@ alias twitter="turses"
 alias email="neomutt"
 alias feh="feh -B \"#1c1c1c\""
 alias mpv="mpv --background=\"#1c1c1c\""
-alias scrot="scrot  ~/Pictures/Screenshots/%b%d_%H%M%S.png"
+alias scrot="scrot  ~/Pictures/Screenshots/%b%d_%H%M%S.png -d 5"
 alias youtube="mpsyt"
 alias ccopy='xclip -selection clipboard'	# copy to clipboard, ctrl+c, ctrl+shift+c
 alias ppaste='xclip -selection clipboard -o'	# paste from clipboard, ctrl+v, ctrl+shift+v
@@ -200,7 +201,7 @@ eval $(dircolors -b $HOME/.dircolors)
 
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER=firefox-nightly
+export BROWSER="firefox-nightly"
 export BROWSERCLI=w3m
 source /usr/share/gdb
 source ~/.zsh_plugins.sh
