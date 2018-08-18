@@ -419,9 +419,8 @@ let g:move_key_modifier = 'C'
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ interface appearance options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-colorscheme minimalist
-" Plug 'limadm/vim-blues'
-
+colorscheme blues
+"blues
 "minimalist
 "spacemacs-theme
 "space-vim-dark
