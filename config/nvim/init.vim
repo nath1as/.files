@@ -25,8 +25,6 @@
 "       ██████████████████
 "      ██ ◖VIM SETTINGS◗ ██
 "       ██████████████████
-
-set nocompatible
 set hidden
 set showtabline=0
 set tabstop=2
@@ -178,6 +176,20 @@ Plug 'tpope/vim-commentary'
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface appearance ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+" colorschemes
+Plug 'zeis/vim-kolor'
+Plug 'sfi0zy/atlantic-dark.vim'
+Plug 'colepeters/spacemacs-theme.vim'
+Plug 'dikiaap/minimalist'
+Plug 'neutaaaaan/iosvkem'
+Plug 'andbar-ru/vim-unicon'
+Plug 'bcicen/vim-vice'
+Plug 'MvanDiemen/ghostbuster'
+Plug 'limadm/vim-blues'
+
+
+" fix for colorschemes
+Plug 'godlygeek/csapprox'
 " colorscheme
 Plug 'flazz/vim-colorschemes'
 " airline
@@ -406,14 +418,18 @@ let g:move_key_modifier = 'C'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ interface appearance options ▐
-"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ 
-" colorscheme
-colorscheme space-vim-dark
+"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+colorscheme minimalist
+" Plug 'limadm/vim-blues'
+
+"minimalist
+"spacemacs-theme
+"space-vim-dark
 set background=dark
-"set termguicolors
+"set  termguicolors
 syntax enable
 
-" airline optins 
+" airline options
 let g:airline_theme='violet'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
