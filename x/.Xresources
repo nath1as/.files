@@ -81,4 +81,4 @@ URxvt.letterSpace: -1
  rofi.terminal: urxvt
  rofi.show-icons: true
  rofi.location: 1  
- rofi.xoffset: 413px
+ rofi.xoffset: 190px
