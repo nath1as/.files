@@ -25,6 +25,7 @@
 "       ██████████████████
 "      ██ ◖VIM SETTINGS◗ ██
 "       ██████████████████
+
 set hidden
 set showtabline=0
 set tabstop=2
@@ -52,6 +53,7 @@ set magic
 "        ████████████████
 "       ██ ◖REMAP KEYS◗ ██
 "        ████████████████
+
 " K=J
 nnoremap K kJ
 nnoremap k gk
@@ -107,6 +109,7 @@ cnoreabbrev W w
 "        █████████████
 " ~/.local/share/nvim/plugged
 " ╠initialize╣
+
 call plug#begin('~/.vim/plugged')
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
@@ -193,9 +196,9 @@ Plug 'godlygeek/csapprox'
 " colorscheme
 Plug 'flazz/vim-colorschemes'
 " airline
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 " airline themes
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline-themes'
 " devicons
 Plug 'ryanoasis/vim-devicons'
 " colors
@@ -293,6 +296,7 @@ call plug#end()
 "        █████████████
 "       ██ ◖OPTIONS◗ ██
 "        █████████████
+
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ writing mode options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
@@ -420,7 +424,7 @@ let g:move_key_modifier = 'C'
 "▌ interface appearance options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 colorscheme blues
-"blues
+" blues
 "minimalist
 "spacemacs-theme
 "space-vim-dark
@@ -428,42 +432,46 @@ set background=dark
 "set  termguicolors
 syntax enable
 
+
 " airline options
-let g:airline_theme='violet'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#left_sep = '░▓▒'
-let g:airline#extensions#tabline#left_alt_sep = '▒▓░'
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline_powerline_fonts = 1
-let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
-let g:airline_skip_empty_sections = 1
+" let g:airline_theme='violet'
+" " violet hybrid
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#left_sep = '░▓▒'
+" let g:airline#extensions#tabline#left_alt_sep = '▒▓░'
+" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+" let g:airline_powerline_fonts = 1
+" let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+" let g:airline_skip_empty_sections = 1
 
-let g:async_status_old = ''
-function! Get_asyncrun_running()
+" let g:airline_powerline_fonts = 1
 
-  let async_status = g:asyncrun_status
-  if async_status != g:async_status_old
+" let g:async_status_old = ''
+" function! Get_asyncrun_running()
 
-    if async_status == 'running'
-      call airline#parts#define_accent('asyncrun_status', 'running')
-    elseif async_status == 'success'
-      call airline#parts#define_accent('asyncrun_status', 'success')
-    elseif async_status == 'failure'
-      call airline#parts#define_accent('asyncrun_status', 'failure')
-    endif
+"   let async_status = g:asyncrun_status
+"   if async_status != g:async_status_old
 
-    let g:airline_section_x = airline#section#create(['asyncrun_status'])
-    AirlineRefresh
-    let g:async_status_old = async_status
+"     if async_status == 'running'
+"       call airline#parts#define_accent('asyncrun_status', 'running')
+"     elseif async_status == 'success'
+"       call airline#parts#define_accent('asyncrun_status', 'success')
+"     elseif async_status == 'failure'
+"       call airline#parts#define_accent('asyncrun_status', 'failure')
+"     endif
 
-  endif
+"     let g:airline_section_x = airline#section#create(['asyncrun_status'])
+"     AirlineRefresh
+"     let g:async_status_old = async_status
 
-  return async_status 
-endfunction
+"   endif
 
-call airline#parts#define_function('asyncrun_status', 'Get_asyncrun_running')
-let g:airline_section_x = airline#section#create(['asyncrun_status'])
+"   return async_status 
+" endfunction
+
+" call airline#parts#define_function('asyncrun_status', 'Get_asyncrun_running')
+" let g:airline_section_x = airline#section#create(['asyncrun_status'])
 
 " indent char
 let g:indentLine_char = '►'
