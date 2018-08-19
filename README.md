@@ -1,5 +1,6 @@
 ![Nathias dotfiles](images/nathiasdotfiles.png)
 
+#### dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
 # ZSH
 
 Installed packages:
@@ -115,7 +116,8 @@ Installed scripts:
 
 
 # OTHER PACKAGES
-
+* ripgrep
+* fzf
 * ranger
 * neomutt
 * newsboat
