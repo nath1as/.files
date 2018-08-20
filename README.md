@@ -135,6 +135,7 @@ Installed scripts:
 * howdoi
 * glances
 * htop-vim-git
+* gotop
 * iftop
 * nbwmon
 * iotop

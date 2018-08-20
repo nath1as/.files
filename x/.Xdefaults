@@ -1,5 +1,5 @@
 ! Font
-URxvt*font: xft:Hack:size=16,xft:inconsolata:size=10:antialias=true,xft:DejaVu Sans:size=10:antialias=true,xft:Sauce Code Powerline:size=16:antialias=true:hinting=true
+URxvt*font: xft:Hack:size=17,xft:inconsolata:size=10:antialias=true,xft:DejaVu Sans:size=10:antialias=true,xft:Sauce Code Powerline:size=16:antialias=true:hinting=true
 
 !! Extensions
 URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
