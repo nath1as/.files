@@ -118,6 +118,9 @@ Installed scripts:
 # OTHER PACKAGES
 * ripgrep
 * fzf
+* prettyping
+* bat
+* diff-so-fancy
 * ranger
 * neomutt
 * newsboat
