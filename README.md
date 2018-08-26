@@ -115,7 +115,7 @@ Installed scripts:
 * weestreamer
 
 
-# OTHER PACKAGES
+# INSTALLED PACKAGES
 * ripgrep
 * fzf
 * prettyping
