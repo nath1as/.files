@@ -148,7 +148,9 @@ GEOMETRY_SYMBOL_RUBY_RVM_VERSION="◆"
 #      ██ ◖ALIASES◗ ██
 #       █████████████
 
+alias ping="prettyping --nolegend"
 alias ccat="pygmentize"
+alias bat="bat --theme TwoDark"
 alias zspeed="time zsh -i -c exit"
 alias nths="clear && cat /home/nathias/Ascii/nathiasASCII.ascii | lolcat"
 alias ls="ls --color=auto"
