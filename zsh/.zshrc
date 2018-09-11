@@ -148,7 +148,7 @@ GEOMETRY_SYMBOL_RUBY_RVM_VERSION="◆"
 #      ██ ◖ALIASES◗ ██
 #       █████████████
 
-alias unix="curl -L git.io/unix"
+alias unix="curl -sL git.io/unix"
 alias ping="prettyping --nolegend"
 alias ccat="pygmentize"
 alias bat="bat --theme TwoDark"
