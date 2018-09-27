@@ -32,7 +32,7 @@ fixed-center = true
 background = ${colors.trans}
 foreground = ${colors.foreground}
 
-border-size = 0 
+border-size = 0
 border-color = #131313
 
 
@@ -47,7 +47,7 @@ modules-right = arrow8 arrow9 arrow8 arrow7 memory arrow6 cpu arrow7 battery arr
 
 tray-position = right
 tray-background = ${colors.background}
-tray-padding = 2
+tray-padding = 20
 
 ;-------------------------------------------------------------------------------
 ;	D E C O R A T I O N S
@@ -466,4 +466,4 @@ format-padding = 1
 ;   %title%
 ; Default: %title%
 label = %title%
-label-maxlen = 50
+label-maxlen = 30
