@@ -186,4 +186,4 @@ Installed scripts:
 * bash-pipes
 * curl parrot.live
 
-btw, I use Arch
+BTW, I use Arch
