@@ -185,5 +185,7 @@ Installed scripts:
 * lolcat
 * bash-pipes
 * curl parrot.live
+* textlive-most
+* textlive-lang
 
 btw, I use Arch

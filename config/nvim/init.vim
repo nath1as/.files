@@ -127,6 +127,8 @@ Plug 'reedes/vim-wordy'
 Plug 'reedes/vim-lexical'
 " markdown
 Plug 'suan/vim-instant-markdown'
+" latex
+Plug 'donRaphaco/neotex', { 'for': 'tex' }
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ drawing mode  ▐
@@ -196,15 +198,15 @@ Plug 'godlygeek/csapprox'
 " colorscheme
 Plug 'flazz/vim-colorschemes'
 " airline
-"Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
 " airline themes
-"Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 " devicons
 Plug 'ryanoasis/vim-devicons'
 " colors
 Plug 'lilydjwg/colorizer'
 " indents
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 " emojis
 Plug 'junegunn/vim-emoji'
 " golden ratio
@@ -343,6 +345,11 @@ let g:limelight_paragraph_span = 0
 
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
 
+" neotex
+"
+let g:neotex_enabled = 2
+let g:neotex_latexdiff = 1
+let g:tex_flavor = 'latex'
 
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
@@ -474,7 +481,7 @@ syntax enable
 " let g:airline_section_x = airline#section#create(['asyncrun_status'])
 
 " indent char
-let g:indentLine_char = '►'
+let g:indentLine_char = '→'
 let g:indentLine_conceallevel = 2
 
 " css color
