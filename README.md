@@ -190,4 +190,4 @@ Installed scripts:
 * pip3 install neovim-remote (fix for neovim vimtex)
 
 
-btw, I use Arch
+BTW, I use Arch
