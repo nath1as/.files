@@ -187,5 +187,7 @@ Installed scripts:
 * curl parrot.live
 * textlive-most
 * textlive-lang
+* pip3 install neovim-remote (fix for neovim vimtex)
+
 
 btw, I use Arch
