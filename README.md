@@ -189,6 +189,7 @@ Installed scripts:
 * textlive-lang
 * pip3 install neovim-remote (fix for neovim vimtex)
 * hed
+* torrench
 
 
 BTW, I use Arch
