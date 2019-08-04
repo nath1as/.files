@@ -114,6 +114,8 @@ Installed scripts:
 * vimode
 * weestreamer
 
+# TTY
+edit /etc/issue to change login
 
 # INSTALLED PACKAGES
 * ripgrep
