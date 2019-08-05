@@ -117,6 +117,10 @@ Installed scripts:
 # TTY
 edit /etc/issue to change login
 
+# NPM
+* jay-repl
+* prettier
+
 # INSTALLED PACKAGES
 * ripgrep
 * fzf
@@ -133,7 +137,6 @@ edit /etc/issue to change login
 * steam
 * tig
 * tmux
-* rtorrent
 * scrot
 * whatis
 * tldr
@@ -191,7 +194,10 @@ edit /etc/issue to change login
 * textlive-lang
 * pip3 install neovim-remote (fix for neovim vimtex)
 * hed
-* torrench
 
+### torrents
+* tsh
+* transmission-cli-git
+* torrench
 
 BTW, I use Arch
