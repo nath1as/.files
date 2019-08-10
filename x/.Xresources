@@ -83,3 +83,4 @@ URxvt*dynamicColors: on
  rofi.show-icons: true
  rofi.location: 1  
  rofi.xoffset: 190px
+
