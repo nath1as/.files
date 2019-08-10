@@ -37,6 +37,7 @@ URxvt.letterSpace: -1
 ! URxvt.perl-ext-common: default,clipboard
 
 ! Colors
+URxvt*dynamicColors: on
 *.boldMode: true
 *.colorBDMode: false
 *.colorBD: #d4bebd

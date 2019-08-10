@@ -120,6 +120,7 @@ edit /etc/issue to change login
 # NPM
 * jay-repl
 * prettier
+* instant-markdown-d
 
 # INSTALLED PACKAGES
 * ripgrep
@@ -138,6 +139,7 @@ edit /etc/issue to change login
 * tig
 * tmux
 * scrot
+* toilet
 * whatis
 * tldr
 * howdoi
