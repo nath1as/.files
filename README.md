@@ -121,6 +121,7 @@ edit /etc/issue to change login
 * jay-repl
 * prettier
 * instant-markdown-d
+* kmdr
 
 # INSTALLED PACKAGES
 * ripgrep
