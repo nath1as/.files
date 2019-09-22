@@ -163,6 +163,7 @@ edit /etc/issue to change login
 * ncdu
 * dfc
 * rtv (reddit in cli)
+* hnwatch (hacker news in cli)
 * twitch-curses (twitch in cli)
 * mps-youtube (youtube in cli)
 * turses(twitter in cli)
@@ -200,6 +201,11 @@ edit /etc/issue to change login
 * textlive-lang
 * pip3 install neovim-remote (fix for neovim vimtex)
 * hed
+* chafa
+* urlportal
+* tor
+* tor-browser
+* torsocks
 
 ### torrents
 * tsh
