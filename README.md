@@ -92,6 +92,9 @@ Installed packages:
 * firefox-hardening
 * shadowfox-updater
 
+set about:config  ui.key.menuAccessKeyFocuses to false
+
+
 # WEECHAT
 Installed packages:
 * weechat
