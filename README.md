@@ -92,7 +92,9 @@ Installed packages:
 * firefox-hardening
 * shadowfox-updater
 
-set about:config  ui.key.menuAccessKeyFocuses to false
+set about:config  
+ui.key.menuAccessKeyFocuses to false
+accessibility.typeaheadfind.manual to false
 
 
 # WEECHAT
