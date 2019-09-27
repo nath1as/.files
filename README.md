@@ -180,6 +180,7 @@ edit /etc/issue to change login
 * pandoc
 * mupdf
 * zathura
+* zathura-pdf-mupdf
 * calibre
 * tusk
 * asperite
