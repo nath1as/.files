@@ -179,6 +179,7 @@ edit /etc/issue to change login
 * docker
 * pandoc
 * mupdf
+* zathura
 * calibre
 * tusk
 * asperite
