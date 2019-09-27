@@ -1,0 +1,72 @@
+# zathurarc
+
+set n-completion-items          20
+
+set completion-bg               "#1c1c1c"
+set completion-fg               "#20ad80"
+set completion-group-bg         "#1c1c1c"
+set completion-group-fg         "#dd75dd"
+set completion-highlight-bg     "#1c1c1c"
+set completion-highlight-fg     "#875faf"
+
+# zathura
+set font                        "Hack 12"
+set guioptions                  none
+# background behind the paper
+set default-bg                  "#1c1c1c"
+# statusbar cursor
+set default-fg                  "#20ad80"
+
+set recolor                     "true"
+ set recolor-keephue             "true"
+# text font
+set recolor-darkcolor           "#d4bebe"
+# text background
+set recolor-lightcolor          "#1c1c1c"
+
+# statusbar
+# status bar font
+set statusbar-fg                "#4f97d7"
+# status bar color
+set statusbar-bg                "#1c1c1c"
+set statusbar-basename          false
+set statusbar-home-tilde        true
+set statusbar-h-padding         8
+set statusbar-v-padding         2
+
+# inputbar background
+set inputbar-bg                 "#20ad80"
+# inputbar font
+set inputbar-fg                 "#1c1c1c"
+
+# notification
+# inputbar background on error message
+set notification-error-bg       "#ee3333"
+# inputbar font on error message
+set notification-error-fg       "#1c1c1c"
+# inputbar background on warning message
+set notification-warning-bg     "#d75f87"
+# inputbar font on warning message
+set notification-warning-fg     "#1c1c1c"
+# unknown
+set notification-bg             "#4f97d7"
+set notification-fg             "#1c1c1c"
+selection-notification          true
+
+# set tabbar-bg                   "#875faf"
+# set tabbar-fg                   "#1c1c1c"
+# set tabbar-focus-fg             "#1c1c1c"
+# set tabbar-focus-bg             "#d75f87"
+
+set index-fg                    "#1c1c1c"
+set index-bg                    "#20ad80"
+set index-active-fg             "#1c1c1c"
+set index-active-bg             "#4f97d7"
+
+set highlight-color             "#4f97d7"
+set highlight-active-color      "#20ad80"
+
+set smooth-scroll true
+set selection-clipboard clipboard
+set scroll-wrap false
+map d scroll down
