@@ -210,6 +210,7 @@ edit /etc/issue to change login
 * tor
 * tor-browser
 * torsocks
+* sc-im
 
 ### torrents
 * tsh
