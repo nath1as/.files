@@ -131,7 +131,7 @@ edit /etc/issue to change login
 * kmdr
 
 ## tools
-* fmt
+* fnm
 
 # INSTALLED PACKAGES
 * ripgrep
