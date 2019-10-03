@@ -122,11 +122,16 @@ Installed scripts:
 # TTY
 edit /etc/issue to change login
 
-# NPM
+# Javascript
+
+## packages
 * jay-repl
 * prettier
 * instant-markdown-d
 * kmdr
+
+## tools
+* fmt
 
 # INSTALLED PACKAGES
 * ripgrep
