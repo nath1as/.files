@@ -1,19 +1,19 @@
 "
-"          █▄
-"          ███▄
-"          ███▀█▄
-"          ███  ▀█▄              █
-"          ███   ███             █     ▄              ▄▄▄
-"          ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
-"          ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
-"          ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
-"          ███   ███                █             ▄▄▄▄▄▄▄█▀
-"          ███   ███
-"          ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
-"          ███              ▪█·█▌ ██  ·██ ▐███▪
-"          ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
-"          █▀                ███  ▐█▌ ██ ██▌▐█▌
-"                             ▀   ▀▀▀ ▀▀  █▪▀▀▀
+"     █▄
+"     ███▄
+"     ███▀█▄
+"     ███  ▀█▄              █
+"     ███   ███             █     ▄              ▄▄▄
+"     ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
+"     ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
+"     ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
+"     ███   ███                █             ▄▄▄▄▄▄▄█▀
+"     ███   ███
+"     ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
+"     ███              ▪█·█▌ ██  ·██ ▐███▪
+"     ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
+"     █▀                ███  ▐█▌ ██ ██▌▐█▌
+"                        ▀   ▀▀▀ ▀▀  █▪▀▀▀
 
 
 
@@ -25,7 +25,7 @@
 "       ██████████████████
 "      ██ ◖VIM SETTINGS◗ ██
 "       ██████████████████
-
+"
 set hidden
 set showtabline=0
 set tabstop=2
@@ -49,6 +49,7 @@ set wildmode=longest:list,full
 set ignorecase
 set smartcase
 set magic
+set relativenumber
 
 "        ████████████████
 "       ██ ◖REMAP KEYS◗ ██
@@ -56,20 +57,11 @@ set magic
 
 " K=J
 nnoremap K kJ
-nnoremap k gk
-nnoremap j gj
-vnoremap k gk
-vnoremap j gj
-
-" copy
-vnoremap  y  "+y
-nnoremap  Y  "+yg_
-nnoremap  y  "+y
-nnoremap  yy  "+yy
-
-" paste
-nnoremap P "+P
-vnoremap P "+P
+" make line into display line
+noremap <silent> k gk
+noremap <silent> j gj
+noremap <silent> 0 g0
+noremap <silent> $ g$
 
 " get out of insert mode with jj
 inoremap jj <Esc>`^
@@ -86,12 +78,9 @@ map <A-k> :bp<CR>
 map <A-h> <C-w>h
 map <A-l> <C-w>l
 
-" swapover mark jumping keys
-nnoremap ' `
-nnoremap ` '
-
 " ctrlspace
-nnoremap <silent><C-p> :CtrlSpace O<CR>
+ nnoremap <silent><C-space> :CtrlSpace O<CR>
+
 
 "        ████████████████████
 "       ██ ◖REMAP MISTAKES◗ ██
@@ -128,12 +117,7 @@ Plug 'reedes/vim-lexical'
 " markdown
 Plug 'suan/vim-instant-markdown'
 " latex
-Plug 'donRaphaco/neotex', { 'for': 'tex' }
-
-"▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-"▌ drawing mode  ▐
-"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-Plug 'vim-scripts/DrawIt'
+Plug 'lervag/vimtex'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ files and command line ▐
@@ -153,6 +137,8 @@ Plug 'mileszs/ack.vim'
 "▔▔▔▔▔▔▔
 " fugitive
 Plug 'tpope/vim-fugitive'
+" rhubarb
+Plug 'tpope/vim-rhubarb'
 " vim git
 Plug 'tpope/vim-git'
 
@@ -161,11 +147,13 @@ Plug 'tpope/vim-git'
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 " highlight yanked text
 Plug 'machakann/vim-highlightedyank'
-" insert or delete brackets, parens, quotes in pair.
-Plug 'jiangmiao/auto-pairs'
+" system copy: cpiw cp$ etc..
+" copy: cp
+" paste: cv
+Plug 'christoomey/vim-system-copy'
 " remember cursor position in closed buffers
 Plug 'dietsche/vim-lastplace'
-" move blocks of code with ALT+j/k
+" move blocks of code with Ctrl+j/k
 Plug 'matze/vim-move'
 " surround
 Plug 'tpope/vim-surround'
@@ -175,7 +163,7 @@ Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
 " xterm-color-table
 Plug 'guns/xterm-color-table.vim'
-" comments toggle on gc
+" comment toggle with gc: gcc whole line
 Plug 'tpope/vim-commentary'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
@@ -197,16 +185,10 @@ Plug 'limadm/vim-blues'
 Plug 'godlygeek/csapprox'
 " colorscheme
 Plug 'flazz/vim-colorschemes'
-" airline
-" Plug 'vim-airline/vim-airline'
-" airline themes
-" Plug 'vim-airline/vim-airline-themes'
 " devicons
 Plug 'ryanoasis/vim-devicons'
 " colors
 Plug 'lilydjwg/colorizer'
-" indents
-" Plug 'Yggdroot/indentLine'
 " emojis
 Plug 'junegunn/vim-emoji'
 " golden ratio
@@ -224,13 +206,13 @@ Plug 'honza/vim-snippets'
 "▔▔▔▔▔▔▔▔▔▔▔
 " ale
 Plug 'w0rp/ale'
-" JavaScript
+" " JavaScript
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}
 Plug 'moll/vim-node', {'for': ['javascript', 'javascript.jsx', 'json']}
 Plug 'gerrard00/vim-mocha-only', { 'for': ['javascript'] }
 Plug 'alampros/vim-styled-jsx'
 Plug 'Galooshi/vim-import-js'
-Plug 'styled-components/vim-styled-components'
+" Plug 'styled-components/vim-styled-components'
 Plug 'mxw/vim-jsx'
 " HTML/CSS
 Plug 'ap/vim-css-color', {'for': ['css', 'scss']}
@@ -268,27 +250,8 @@ Plug 'othree/javascript-libraries-syntax.vim'
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ completion ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-" deoplete
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-" tern deoplete
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-" py deoplete
-Plug 'zchee/deoplete-jedi'
-" ruby deoplete
-Plug 'fishbullet/deoplete-ruby'
-" many deoplete
-Plug 'Shougo/neco-syntax'
-" better js completion
-Plug '1995eaton/vim-better-javascript-completion'
-
-
+" Use release branch
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " ╠initialize╣
 call plug#end()
@@ -351,6 +314,15 @@ let g:neotex_enabled = 2
 let g:neotex_latexdiff = 1
 let g:tex_flavor = 'latex'
 
+" vimtex
+"compile \ll
+" \lv
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+let g:vimtex_compiler_progname = 'nvr'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ files and command line options ▐
@@ -414,18 +386,7 @@ augroup file-types
   autocmd BufNewFile,BufRead *.cshtml setlocal filetype=cshtml
 
 
-" Switch between normal and relative line numbers and cursorline
-"  when switching modes  augroup highlight-when-switching-modes
-augroup highlight-when-switching-modes
-      autocmd!
-      autocmd InsertEnter * setlocal number relativenumber nocursorline
-       autocmd InsertLeave * setlocal norelativenumber cursorline
-       autocmd WinEnter    * setlocal nocursorline
-       autocmd WinLeave    * setlocal cursorline
-augroup END
-
 let g:move_key_modifier = 'C'
-
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ interface appearance options ▐
@@ -439,47 +400,6 @@ set background=dark
 "set  termguicolors
 syntax enable
 
-
-" airline options
-" let g:airline_theme='violet'
-" " violet hybrid
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#fnamemod = ':t'
-" let g:airline#extensions#tabline#left_sep = '░▓▒'
-" let g:airline#extensions#tabline#left_alt_sep = '▒▓░'
-" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-" let g:airline_powerline_fonts = 1
-" let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
-" let g:airline_skip_empty_sections = 1
-
-" let g:airline_powerline_fonts = 1
-
-" let g:async_status_old = ''
-" function! Get_asyncrun_running()
-
-"   let async_status = g:asyncrun_status
-"   if async_status != g:async_status_old
-
-"     if async_status == 'running'
-"       call airline#parts#define_accent('asyncrun_status', 'running')
-"     elseif async_status == 'success'
-"       call airline#parts#define_accent('asyncrun_status', 'success')
-"     elseif async_status == 'failure'
-"       call airline#parts#define_accent('asyncrun_status', 'failure')
-"     endif
-
-"     let g:airline_section_x = airline#section#create(['asyncrun_status'])
-"     AirlineRefresh
-"     let g:async_status_old = async_status
-
-"   endif
-
-"   return async_status 
-" endfunction
-
-" call airline#parts#define_function('asyncrun_status', 'Get_asyncrun_running')
-" let g:airline_section_x = airline#section#create(['asyncrun_status'])
-
 " indent char
 let g:indentLine_char = '→'
 let g:indentLine_conceallevel = 2
@@ -491,17 +411,19 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 "▌ snippets options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 " ultisnips
-" let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsListSnippets="<A-tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-j>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
-inoremap <expr><TAB>  pumvisible() ? "\<C-j>" : "\<TAB>"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 "▁▁▁▁▁▁▁▁▁▁▁
 "▌ linters ▐
 "▔▔▔▔▔▔▔▔▔▔▔
+"
+
 " ale
 let g:ale_completion_delay = 0
 let g:ale_sign_error = '●'
@@ -530,33 +452,5 @@ endif
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ completion options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-" " deoplete setup
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
-set completeopt=longest,menuone
-filetype plugin on
- 
-let g:deoplete#omni#functions = {}
-let g:deoplete#omni#functions.javascript = [
-  \ 'tern#Complete',
-  \ 'jspc#omni'
-\]	
- 
-set omnifunc=syntaxcomplete#Complete
-let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-let g:tern#command = ['tern']
-let g:tern#arguments = ['--persistent']
- autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-
-" ternjs
-if has('deoplete-ternjs')
-  let g:deoplete#sources#ternjs#types = 1
-  let g:deoplete#sources#ternjs#filetypes = [
-        \ 'js',
-        \ 'jsx',
-        \ 'javascript.jsx',
-        \ ]
-endif
-
+"
 autocmd FileType javascript set formatprg=prettier\ --stdin
