@@ -1,19 +1,19 @@
 "
-"     █▄
-"     ███▄
-"     ███▀█▄
-"     ███  ▀█▄              █
-"     ███   ███             █     ▄              ▄▄▄
-"     ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
-"     ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
-"     ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
-"     ███   ███                █             ▄▄▄▄▄▄▄█▀
-"     ███   ███
-"     ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
-"     ███              ▪█·█▌ ██  ·██ ▐███▪
-"     ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
-"     █▀                ███  ▐█▌ ██ ██▌▐█▌
-"                        ▀   ▀▀▀ ▀▀  █▪▀▀▀
+"    █▄
+"    ███▄
+"    ███▀█▄
+"    ███  ▀█▄              █
+"    ███   ███             █     ▄              ▄▄▄
+"    ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
+"    ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
+"    ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
+"    ███   ███                █             ▄▄▄▄▄▄▄█▀
+"    ███   ███
+"    ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
+"    ███              ▪█·█▌ ██  ·██ ▐███▪
+"    ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
+"    █▀                ███  ▐█▌ ██ ██▌▐█▌
+"                       ▀   ▀▀▀ ▀▀  █▪▀▀▀
 
 
 
@@ -79,7 +79,7 @@ map <A-h> <C-w>h
 map <A-l> <C-w>l
 
 " ctrlspace
- nnoremap <silent><C-space> :CtrlSpace O<CR>
+nnoremap <silent><C-space> :CtrlSpace O<CR>
 
 
 "        ████████████████████
@@ -128,9 +128,9 @@ Plug 'tpope/vim-vinegar'
 "Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 " fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " ack
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 
 "▁▁▁▁▁▁▁
 "▌ git ▐
@@ -159,10 +159,6 @@ Plug 'matze/vim-move'
 Plug 'tpope/vim-surround'
 "supertab
 Plug 'ervandew/supertab'
-" multiple cursors
-Plug 'terryma/vim-multiple-cursors'
-" xterm-color-table
-Plug 'guns/xterm-color-table.vim'
 " comment toggle with gc: gcc whole line
 Plug 'tpope/vim-commentary'
 
@@ -343,7 +339,6 @@ endif
 "▌ git options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 
-
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface functionality options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
@@ -453,4 +448,6 @@ endif
 "▌ completion options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 "
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 autocmd FileType javascript set formatprg=prettier\ --stdin
