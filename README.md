@@ -216,6 +216,7 @@ edit /etc/issue to change login
 * tor-browser
 * torsocks
 * sc-im
+* chafa
 
 ### torrents
 * tsh
