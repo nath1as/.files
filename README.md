@@ -217,6 +217,7 @@ edit /etc/issue to change login
 * torsocks
 * sc-im
 * chafa
+* curlie
 
 ### torrents
 * tsh
