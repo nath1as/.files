@@ -1,8 +1,6 @@
 ![Nathias dotfiles](images/nathiasdotfiles.png)
 
 #### dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
-# TODO:
-* Color option in your /etc/pacman.conf
 
 # ZSH
 
@@ -124,6 +122,9 @@ Installed scripts:
 
 # TTY
 edit /etc/issue to change login
+
+# YAY
+* Color option in /etc/pacman.conf 
 
 # Javascript
 
