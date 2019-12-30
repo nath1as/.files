@@ -222,6 +222,7 @@ edit /etc/issue to change login
 * sc-im
 * chafa
 * curlie
+* what
 
 ### torrents
 * tsh
