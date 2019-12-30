@@ -223,10 +223,12 @@ edit /etc/issue to change login
 * chafa
 * curlie
 * what
+* syncthing
 
 ### torrents
 * tsh
 * transmission-cli-git
 * torrench
+* or rtorrent
 
 BTW, I use Arch
