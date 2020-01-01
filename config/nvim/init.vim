@@ -1,19 +1,19 @@
 "
-"    █▄
-"    ███▄
-"    ███▀█▄
-"    ███  ▀█▄              █
-"    ███   ███             █     ▄              ▄▄▄
-"    ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
-"    ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
-"    ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
-"    ███   ███                █             ▄▄▄▄▄▄▄█▀
-"    ███   ███
-"    ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
-"    ███              ▪█·█▌ ██  ·██ ▐███▪
-"    ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
-"    █▀                ███  ▐█▌ ██ ██▌▐█▌
-"                       ▀   ▀▀▀ ▀▀  █▪▀▀▀
+"     █▄
+"     ███▄
+"     ███▀█▄
+"     ███  ▀█▄              █
+"     ███   ███             █     ▄              ▄▄▄
+"     ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
+"     ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
+"     ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
+"     ███   ███                █             ▄▄▄▄▄▄▄█▀
+"     ███   ███
+"     ███   █▀          ▌ ▐· ▪   • ▌ ▄ ·.
+"     ███              ▪█·█▌ ██  ·██ ▐███▪
+"     ███              ▐█▐█• ▐█· ▐█ ▌▐▌▐█·
+"     █▀                ███  ▐█▌ ██ ██▌▐█▌
+"                        ▀   ▀▀▀ ▀▀  █▪▀▀▀
 
 
 
@@ -44,6 +44,7 @@ set noerrorbells
 set shortmess=aoOtIWcFs
 set title
 set showcmd
+set noshowmode
 set wildmenu
 set wildmode=longest:list,full
 set ignorecase
@@ -81,6 +82,8 @@ map <A-l> <C-w>l
 " ctrlspace
 nnoremap <silent><C-space> :CtrlSpace O<CR>
 
+" prettier
+nnoremap <C-p>  :Prettier<CR>
 
 "        ████████████████████
 "       ██ ◖REMAP MISTAKES◗ ██
@@ -109,11 +112,11 @@ Plug 'junegunn/goyo.vim'
 " limelight
 Plug 'junegunn/limelight.vim'
 " thesaurus
-Plug 'beloglazov/vim-online-thesaurus'
+" Plug 'beloglazov/vim-online-thesaurus'
 " wordy
-Plug 'reedes/vim-wordy'
+" Plug 'reedes/vim-wordy'
 " lexical
-Plug 'reedes/vim-lexical'
+" Plug 'reedes/vim-lexical'
 " markdown
 Plug 'suan/vim-instant-markdown'
 " latex
@@ -145,6 +148,8 @@ Plug 'tpope/vim-git'
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface functionality ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+" status line
+Plug 'https://gitlab.com/maister/skyline.vim'
 " highlight yanked text
 Plug 'machakann/vim-highlightedyank'
 " system copy: cpiw cp$ etc..
@@ -166,36 +171,24 @@ Plug 'tpope/vim-commentary'
 "▌interface appearance ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 " colorschemes
-Plug 'zeis/vim-kolor'
-Plug 'sfi0zy/atlantic-dark.vim'
-Plug 'colepeters/spacemacs-theme.vim'
-Plug 'dikiaap/minimalist'
-Plug 'neutaaaaan/iosvkem'
-Plug 'andbar-ru/vim-unicon'
-Plug 'bcicen/vim-vice'
-Plug 'MvanDiemen/ghostbuster'
-Plug 'limadm/vim-blues'
-
-
-" fix for colorschemes
-Plug 'godlygeek/csapprox'
+ Plug 'dikiaap/minimalist'
 " colorscheme
-Plug 'flazz/vim-colorschemes'
+ Plug 'flazz/vim-colorschemes'
+" fix for colorschemes
+ Plug 'godlygeek/csapprox'
 " devicons
-Plug 'ryanoasis/vim-devicons'
-" colors
-Plug 'lilydjwg/colorizer'
+" Plug 'ryanoasis/vim-devicons'
 " emojis
-Plug 'junegunn/vim-emoji'
+" Plug 'junegunn/vim-emoji'
 " golden ratio
-Plug 'roman/golden-ratio'
+" Plug 'roman/golden-ratio'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ snippets ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔
 Plug 'epilande/vim-react-snippets'
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 "▁▁▁▁▁▁▁▁▁▁▁
 "▌ linters ▐
@@ -204,26 +197,16 @@ Plug 'honza/vim-snippets'
 Plug 'w0rp/ale'
 " " JavaScript
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}
-Plug 'moll/vim-node', {'for': ['javascript', 'javascript.jsx', 'json']}
-Plug 'gerrard00/vim-mocha-only', { 'for': ['javascript'] }
-Plug 'alampros/vim-styled-jsx'
-Plug 'Galooshi/vim-import-js'
-" Plug 'styled-components/vim-styled-components'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'mxw/vim-jsx'
 " HTML/CSS
 Plug 'ap/vim-css-color', {'for': ['css', 'scss']}
-Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
-" Better Scss highlighting than polyglot
-Plug 'tpope/vim-haml'
-Plug 'othree/html5-syntax.vim'
-Plug 'Valloric/MatchTagAlways'
-Plug 'hail2u/vim-css3-syntax'
 " i3 syntax
 Plug 'PotatoesMaster/i3-vim-syntax'
 " Syntax and highlighting for every language
-Plug 'sheerun/vim-polyglot'
-Plug 'blockloop/vim-swigjs'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'blockloop/vim-swigjs'
 " language server protocol
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -232,16 +215,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 " prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql']}
+  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'python', 'c']}
 Plug 'skywind3000/asyncrun.vim'
-
-" js es6
-Plug 'isRuslan/vim-es6'
-" jquery
-Plug 'itspriddle/vim-jquery'
-" js libraries
-Plug 'othree/javascript-libraries-syntax.vim'
-
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ completion ▐
@@ -342,6 +317,9 @@ endif
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface functionality options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+" status line
+let g:skyline_readonly_flag = 1
+let g:skyline_line_count = 1
 
 if has('MatchTagAlways')
   let g:mta_filetypes = {
@@ -433,16 +411,12 @@ endif
 " react
 let g:jsx_ext_required = 0
 
-" emmet
-if has('emmet-vim')
-  imap hh <C-y>,
-endif
 
 " polyglot
-if has('vim-polyglot')
-  let g:polyglot_disabled = ['markdown', 'scss']
-  let g:jsx_ext_required = 0
-endif
+" if has('vim-polyglot')
+"   let g:polyglot_disabled = ['markdown', 'scss']
+"   let g:jsx_ext_required = 0
+" endif
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ completion options ▐
