@@ -125,10 +125,14 @@ edit /etc/issue to change login
 
 # YAY
 * Color option in /etc/pacman.conf 
+
 # GIT
 * gitflow-avh
 * git-annex
-* hubJJ
+* hub
+
+#Virtualization
+* libvirt
 
 # Javascript
 
