@@ -130,9 +130,7 @@ edit /etc/issue to change login
 * gitflow-avh
 * git-annex
 * hub
-
-#Virtualization
-* libvirt
+* legit
 
 # Javascript
 
