@@ -130,7 +130,8 @@ edit /etc/issue to change login
 * gitflow-avh
 * git-annex
 * hub
-* legit
+* legit (replaced by github-cli, todo: custom aliases)
+* github-cli
 
 # Javascript
 
