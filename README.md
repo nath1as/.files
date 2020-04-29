@@ -231,6 +231,7 @@ edit /etc/issue to change login
 * curlie
 * what
 * syncthing
+* python-ueberzug
 
 ### torrents
 * tsh
