@@ -140,6 +140,9 @@ edit /etc/issue to change login
 * prettier
 * instant-markdown-d
 * kmdr
+* lazygit
+* lazydocker
+* lazynpm
 
 ## tools
 * fnm
