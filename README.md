@@ -235,6 +235,7 @@ edit /etc/issue to change login
 * what
 * syncthing
 * python-ueberzug
+* pdf2png
 
 ### torrents
 * tsh
