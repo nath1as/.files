@@ -132,6 +132,10 @@ edit /etc/issue to change login
 * hub
 * legit (replaced by github-cli, todo: custom aliases)
 * github-cli
+* npm i -g git-stats
+* git-user
+* git-profile (go install)
+* diff-so-fancy
 
 # Javascript
 
