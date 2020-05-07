@@ -7,24 +7,30 @@
   pager = less -F -X
   editor = nvim
 
-[merge]
-    tool = nvim
+; [merge]
+;     tool = nvim
 
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [alias]
-  #cet jira ticket
+  l = log --all -t -8 --decorate=short --color --format=format:'%C(blue bold)%C(bold cyan)%h%C(reset)%C(reset) %C(black)• %C(black)%an • %C(magenta )\n  %C(blue bold)∟► %C(magenta)%s%C(green bold) ✔'
+  s = "status -s"
+  a = "add ."
+  c = "commit -m"
+  d = "status --show-stash --long -v"
+
+  ; jira
   ticket = "!f() { git rev-parse --abbrev-ref HEAD | grep -Eo '([A-Z]{3,}-)([0-9]+)' -m 1 ; }; f"
-  #commit w/ message prefixed with JIRA ticket
-  cm = "!f() { TICKET=$(git ticket); git commit -m \"$TICKET $1\"; }; f"
+  tc = "!f() { TICKET=$(git ticket); git commit -m \"$TICKET $1\"; }; f"
+  ; legit
   sync = !/usr/bin/legit sync
   publish = !/usr/bin/legit publish
   unpublish = !/usr/bin/legit unpublish
   undo = !/usr/bin/legit undo
   branches = !/usr/bin/legit branches
-  ls = log --all -t -8 --decorate=short --color --format=format:'%C(blue bold)%C(bold cyan)%h%C(reset)%C(reset) %C(black)• %C(black)%an • %C(magenta )\n  %C(blue bold)∟► %C(magenta)%s%C(green bold) ✔'
+
 
 
 [color]
@@ -69,4 +75,3 @@
 
 [color "diff-highlight"]
 	oldNormal = red bold
-
