@@ -136,6 +136,7 @@ edit /etc/issue to change login
 * git-user
 * git-profile (go install)
 * diff-so-fancy
+* git-extras
 
 # Javascript
 
@@ -173,7 +174,7 @@ edit /etc/issue to change login
 * tldr
 * howdoi
 * glances
-* htop-vim-git
+* htop-vim
 * gotop
 * iftop
 * nbwmon
