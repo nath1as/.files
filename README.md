@@ -200,6 +200,7 @@ edit /etc/issue to change login
 * weechat
 * pgcli
 * bpython
+* bpytop
 * docker
 * pandoc
 * mupdf
