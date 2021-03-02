@@ -137,6 +137,7 @@ edit /etc/issue to change login
 * git-profile (go install)
 * diff-so-fancy
 * git-extras
+* git-crypt
 
 # Javascript
 
