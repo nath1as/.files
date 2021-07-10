@@ -1,23 +1,23 @@
 #
-#          █▄
-#          ███▄
-#          ███▀█▄
-#          ███  ▀█▄              █
-#          ███   ███             █     ▄              ▄▄▄
-#          ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
-#          ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
-#          ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
-#          ███   ███                █             ▄▄▄▄▄▄▄█▀
-#          ███   ███
-#          ███   █▀     ▒███████▒  ██████  ██░ ██
-#          ███          ▒ ▒ ▒ ▄▀░▒██    ▒ ▓██░ ██▒
-#          ███          ░ ▒ ▄▀▒░ ░ ▓██▄   ▒██▀▀██░
-#          █▀             ▄▀▒   ░  ▒   ██▒░▓█ ░██
-#                       ▒███████▒▒██████▒▒░▓█▒░██▓
-#                        ░▒▒ ▓░▒░▒▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
-#                        ░░▒ ▒ ░ ▒░ ░▒  ░ ░ ▒ ░▒░ ░
-#                        ░ ░ ░ ░ ░░  ░  ░   ░  ░░ ░
-#                          ░ ░          ░   ░  ░  ░
+#    █▄
+#    ███▄
+#    ███▀█▄
+#    ███  ▀█▄              █
+#    ███   ███             █     ▄              ▄▄▄
+#    ███   ███     ▄█▄     █     █       ▄█▄  ▄█▀ ▀▀
+#    ███   ███   ▄█▀ ▀█▄  ▀█▀ ▄▄▄█ ▀   ▄█▀ ▀█▄ ▀█▄▄
+#    ███   ███ ▄██▄   ▄██▄ █▄ █  █ █ ▄██▄   ▄██▄  ▀█▄
+#    ███   ███                █             ▄▄▄▄▄▄▄█▀
+#    ███   ███
+#    ███   █▀     ▒███████▒  ██████  ██░ ██
+#    ███          ▒ ▒ ▒ ▄▀░▒██    ▒ ▓██░ ██▒
+#    ███          ░ ▒ ▄▀▒░ ░ ▓██▄   ▒██▀▀██░
+#    █▀             ▄▀▒   ░  ▒   ██▒░▓█ ░██
+#                 ▒███████▒▒██████▒▒░▓█▒░██▓
+#                  ░▒▒ ▓░▒░▒▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
+#                  ░░▒ ▒ ░ ▒░ ░▒  ░ ░ ▒ ░▒░ ░
+#                  ░ ░ ░ ░ ░░  ░  ░   ░  ░░ ░
+#                    ░ ░          ░   ░  ░  ░
 
 
 
@@ -33,6 +33,7 @@
 unsetopt menu_complete
 unsetopt flowcontrol
 setopt auto_menu
+zstyle 'completion:*' menu select
 setopt complete_in_word
 setopt always_to_end
 setopt extendedglob
@@ -41,17 +42,16 @@ setopt extendedglob
 #▌ compleat ▐
 #▔▔▔▔▔▔▔▔▔▔▔▔
 
-autoload -Uz compinit 
+autoload -Uz compinit && compinit
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
 	compinit -d;
 else
 	compinit -C;
 fi;
 
-source ~/.bash_completion.d/compleat_setup
 
 # % fix
-unsetopt PROMPT_SP
+ unsetopt PROMPT_SP
 
 #       █████████████
 #      ██ ◖HISTORY◗ ██
@@ -78,87 +78,66 @@ setopt inc_append_history
 setopt share_history
 
 #       ██████████████
-#      ██ ◖GEOMETRY◗ ██
+#      ██  ◖ATHAME◗  ██
+#       ██████████████
+# export ATHAME_ENABLED: 0
+
+
+
+#       ██████████████
+#      ██  ◖PROMPT◗  ██
 #       ██████████████
 
-#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-#▌ geometry settings ▐
-#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+#▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+#▌ spaceship settings  ▐
+#▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+export SPACESHIP_PROMPT_DEFAULT_PREFIX=""
+export SPACESHIP_VI_MODE_SHOW=false
+export SPACESHIP_NODE_SHOW=false
+export SPACESHIP_CHAR_SYMBOL="λ "
 
-GEOMETRY_SYMBOL_PROMPT="%Bλ%f"      # default prompt symbol
-GEOMETRY_SYMBOL_RPROMPT="%Bλ%f"     # multiline prompts
-GEOMETRY_SYMBOL_EXIT_VALUE="%Bλ%f" # displayed when exit value != 0
-GEOMETRY_SYMBOL_ROOT="%BΩ%f"        # when logged in user is roo
-PROMPT_GEOMETRY_COLORIZE_SYMBOL=false
-PROMPT_GEOMETRY_COLORIZE_ROOT=true 
-PROMPT_GEOMETRY_COMMAND_EXEC_TIME=true
-#colors
-GEOMETRY_COLOR_PROMPT="green"
-GEOMETRY_COLOR_ROOT="red"
-GEOMETRY_COLOR_EXIT_VALUE="magenta"  
-GEOMETRY_COLOR_DIR="magenta"
-# plugins
-GEOMETRY_PROMPT_PLUGINS=(virtualenv exec_time git hg node jobs)
-# virtualenv
-GEOMETRY_COLOR_VIRTUALENV="green"
-GEOMETRY_COLOR_CONDA="green"
-GEOMETRY_VIRTUALENV_CONDA_SEPARATOR=":"
-# docker
-GEOMETRY_COLOR_DOCKER_MACHINE="blue"
-GEOMETRY_SYMBOL_DOCKER_MACHINE="⚓"
-# jobs
-GEOMETRY_COLOR_JOBS="blue"
-GEOMETRY_SYMBOL_JOBS="⚙"
-# hg
-GEOMETRY_COLOR_HG_DIRTY="red"
-GEOMETRY_COLOR_HG_CLEAN="green"
-GEOMETRY_COLOR_HG_BRANCH=242
-GEOMETRY_SYMBOL_HG_DIRTY="⬡"
-GEOMETRY_SYMBOL_HG_CLEAN="⬢"
-GEOMETRY_SYMBOL_HG_SEPARATOR="::"
-# git
-GEOMETRY_SYMBOL_GIT_DIRTY="⬡"  # repo has "dirty" state
-GEOMETRY_SYMBOL_GIT_CLEAN="⬢"  # repo has "clean" state
-GEOMETRY_SYMBOL_GIT_BARE="⬢"   # repo is bare (no working tree)
-GEOMETRY_SYMBOL_GIT_REBASE="\uE0A0" # in middle of rebase
-GEOMETRY_SYMBOL_GIT_UNPULLED="⇣" # unpulled changes
-GEOMETRY_SYMBOL_GIT_UNPUSHED="⇡" # unpushed changes
-GEOMETRY_SYMBOL_GIT_CONFLICTS_SOLVED="◆" #conflicts have been solved
-GEOMETRY_SYMBOL_GIT_CONFLICTS_UNSOLVED="◈" #still unsolved conflicts
-GEOMETRY_COLOR_GIT_DIRTY="red" # repo has "dirty" state
-GEOMETRY_COLOR_GIT_CLEAN="green" # repo has "clean" state
-GEOMETRY_COLOR_GIT_BARE="blue"  # repo is bare (no working tree)
-GEOMETRY_COLOR_GIT_CONFLICTS_UNSOLVED="red"  # unsolved conflicts
-GEOMETRY_COLOR_GIT_CONFLICTS_SOLVED="green"  # conflicts resolved
-GEOMETRY_COLOR_GIT_BRANCH=242  # branch name color
-PROMPT_GEOMETRY_GIT_CONFLICTS=true  # merge conflict
-PROMPT_GEOMETRY_GIT_TIME=true # time since last commit
-PROMPT_GEOMETRY_GIT_TIME_LONG_FORMAT=false  # long format for timet
-PROMPT_GEOMETRY_GIT_TIME_SHOW_EMPTY=true # show time when no commit
-GEOMETRY_GIT_NO_COMMITS_MESSAGE="no commits" # message
-GEOMETRY_GIT_SEPARATOR="::"  # character separator
-# node
-GEOMETRY_COLOR_PACKAGER_VERSION="black"
-GEOMETRY_SYMBOL_NODE_NPM_VERSION="⬡"
-# ruby
-GEOMETRY_RUBY_RVM_SHOW_GEMSET=true
-GEOMETRY_SYMBOL_RUBY_RVM_VERSION="◆"
 
 #       █████████████
 #      ██ ◖ALIASES◗ ██
 #       █████████████
-
+#
+alias g="git"
+alias grep="rg -p"
+alias r="ranger"
+alias v="nvim"
+alias c="cd"
+alias l="ls"
+alias y="yay"
+alias m="man"
+alias t="tig"
+alias vim="nvim"
+alias disk="dfc"
+alias zt="zathura"
+alias ip='ip -color=always'
+alias mpp="echo 'Matija Potočnik Pribošič'"
+alias yarnUpdate="curl --compressed -o- -L https://yarnpkg.com/install.sh | zsh"
+alias lf="ls -d */"
+alias subtitle="subliminal download -l en"
+alias weather="curl wttr.in"
+alias clean="cd /home/nathias/Downloads/ && mv *.torrent torrents; mv *.pdf books/; mv *.txt books; mv *.epub books; mv *.doc books; mv *.docx books; mv *.png images; mv *.jpg images; mv *.svg images; mv *.gif images; mv *.bmp images; rm *.meta; echo 'Download cleanup complete'; ls"
+alias xbig="xrandr --output eDP-1 --mode 1600x900 --rate 60"
+alias xsmall=" xrandr --output eDP-1 --mode 2560x1440 --rate 60"
+alias thinkpad="sudo hda-verb /dev/snd/hwC0D0 0x1d SET_PIN_WIDGET_CONTROL 0x0"
+alias tsh="./Scripts/tsh/t.sh"
+alias parrot="curl parrot.live"
 alias unix="curl -sL git.io/unix"
 alias ping="prettyping --nolegend"
 alias ccat="pygmentize"
 alias bat="bat --theme TwoDark"
 alias zspeed="time zsh -i -c exit"
+alias nathias="./Scripts/script1"
 alias nths="clear && cat /home/nathias/Ascii/nathiasASCII.ascii | lolcat"
+alias haskell="ghci"
 alias ls="ls --color=auto"
+alias ncdu="ncdu --color dark"
 alias anti="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
-alias vim="nvim"
+alias diff="diff --color=auto"
 alias tree="exa -TRL 3"
-alias repl="colorepl"
 alias bpy="bpython -q"
 alias fn="firefox-nightly"
 alias reddit="rtv --enable-media"
@@ -172,6 +151,7 @@ alias youtube="mpsyt"
 alias ccopy='xclip -selection clipboard'	# copy to clipboard, ctrl+c, ctrl+shift+c
 alias ppaste='xclip -selection clipboard -o'	# paste from clipboard, ctrl+v, ctrl+shift+v
 alias sselect='xclip -selection primary -o'	# paste from highlight, middle click, shift+insert
+alias awsx="source _awsx"
 
 
 #       ████████████
@@ -183,7 +163,7 @@ alias sselect='xclip -selection primary -o'	# paste from highlight, middle click
 #▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 
 export MANPAGER='less'
-export LESS="-ismW"
+export LESS="-ismWXr"
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
 export LESS_TERMCAP_me=$'\e[0m'
@@ -192,6 +172,14 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;34m'
 export LESS_TERMCAP_us=$'\E[04;33;146m' 
+
+# use colors in less
+export LESS=-Xr
+
+# use colors in grep
+alias grep="grep --color=always"
+alias agl='\ag --pager="less -XFR"'
+alias rg='rg -p'
 
 #▁▁▁▁▁▁▁▁▁▁▁▁▁
 #▌ ls colors ▐
@@ -218,3 +206,7 @@ export BROWSER=firefox-nightly
 export BROWSERCLI=w3m
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+export PATH=/home/nathias/.fnm:$PATH
+eval "`fnm env --multi`"
