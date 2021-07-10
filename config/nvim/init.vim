@@ -21,36 +21,30 @@
 
 
 
-
 "       ██████████████████
 "      ██ ◖VIM SETTINGS◗ ██
 "       ██████████████████
 "
-set hidden
 set showtabline=0
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set textwidth=79
 set expandtab
 set nu
-set hidden
-set showmatch
 set lazyredraw
-set cursorline
-set lcs=tab:▸\ ,trail:•,nbsp:▁
 set list
+set lcs=tab:▸\ trail:•,nbsp:▁
+set encoding=UTF-8
 set noerrorbells
 set shortmess=aoOtIWcFs
-set title
-set showcmd
 set noshowmode
 set wildmenu
 set wildmode=longest:list,full
-set ignorecase
 set smartcase
 set magic
 set relativenumber
+set undofile
+set undodir=~/.vim/undodir
 
 "        ████████████████
 "       ██ ◖REMAP KEYS◗ ██
@@ -58,14 +52,6 @@ set relativenumber
 
 " K=J
 nnoremap K kJ
-" make line into display line
-noremap <silent> k gk
-noremap <silent> j gj
-noremap <silent> 0 g0
-noremap <silent> $ g$
-
-" get out of insert mode with jj
-inoremap jj <Esc>`^
 
 " stay in visual after indentation
 vmap < <gv
@@ -79,11 +65,15 @@ map <A-k> :bp<CR>
 map <A-h> <C-w>h
 map <A-l> <C-w>l
 
-" ctrlspace
-nnoremap <silent><C-space> :CtrlSpace O<CR>
-
 " prettier
-nnoremap <C-p>  :Prettier<CR>
+nmap <C-i>  :Prettier<CR>
+" fzf
+nmap <C-p>  :FZF<CR>
+
+" fugitive
+nnoremap <leader>gd :Gvdiff<CR>
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>
 
 "        ████████████████████
 "       ██ ◖REMAP MISTAKES◗ ██
@@ -111,12 +101,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/goyo.vim'
 " limelight
 Plug 'junegunn/limelight.vim'
-" thesaurus
-" Plug 'beloglazov/vim-online-thesaurus'
-" wordy
-" Plug 'reedes/vim-wordy'
-" lexical
-" Plug 'reedes/vim-lexical'
 " markdown
 Plug 'suan/vim-instant-markdown'
 " latex
@@ -125,15 +109,14 @@ Plug 'lervag/vimtex'
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ files and command line ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-" vinegar
-Plug 'tpope/vim-vinegar'
-" ctrlp
-"Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-ctrlspace/vim-ctrlspace'
+" ranger as file manager
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
+
 " fzf
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" ack
-" Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'ryanoasis/vim-devicons'
 
 "▁▁▁▁▁▁▁
 "▌ git ▐
@@ -144,10 +127,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 " vim git
 Plug 'tpope/vim-git'
+" gist
+Plug 'mattn/gist-vim'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface functionality ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+" learn more complex movement
+" Plug 'takac/vim-hardtime'
 " status line
 Plug 'https://gitlab.com/maister/skyline.vim'
 " highlight yanked text
@@ -161,52 +148,62 @@ Plug 'dietsche/vim-lastplace'
 " move blocks of code with Ctrl+j/k
 Plug 'matze/vim-move'
 " surround
-Plug 'tpope/vim-surround'
+Plug 'tpope/vim,-surround'
 "supertab
-Plug 'ervandew/supertab'
+ Plug 'ervandew/supertab'
 " comment toggle with gc: gcc whole line
 Plug 'tpope/vim-commentary'
+" which key
+" Plug 'liuchengxu/vim-which-key'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface appearance ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+
 " colorschemes
  Plug 'dikiaap/minimalist'
 " colorscheme
  Plug 'flazz/vim-colorschemes'
 " fix for colorschemes
  Plug 'godlygeek/csapprox'
-" devicons
-" Plug 'ryanoasis/vim-devicons'
-" emojis
-" Plug 'junegunn/vim-emoji'
 " golden ratio
-" Plug 'roman/golden-ratio'
+ Plug 'roman/golden-ratio'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ snippets ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔
 Plug 'epilande/vim-react-snippets'
-Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
 
 "▁▁▁▁▁▁▁▁▁▁▁
 "▌ linters ▐
 "▔▔▔▔▔▔▔▔▔▔▔
+" treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 " ale
 Plug 'w0rp/ale'
 " " JavaScript
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'mxw/vim-jsx'
+" typescript
+Plug 'ianks/vim-tsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'peitalin/vim-jsx-typescript'
+" Plug 'HerringtonDarkholme/yats.vim'
 " HTML/CSS
 Plug 'ap/vim-css-color', {'for': ['css', 'scss']}
 Plug 'alvan/vim-closetag'
+Plug 'styled-components/vim-styled-components'
+" dart
+" Plug 'thosakwe/vim-flutter'
+" Plug 'dart-lang/dart-vim-plugin'
+" Plug 'natebosch/vim-lsc'
+" Plug 'natebosch/vim-lsc-dart'
 " i3 syntax
 Plug 'PotatoesMaster/i3-vim-syntax'
-" Syntax and highlighting for every language
-" Plug 'sheerun/vim-polyglot'
-" Plug 'blockloop/vim-swigjs'
 " language server protocol
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -215,7 +212,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 " prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'python', 'c']}
+  \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'jsx', 'tsx', 'css', 'scss', 'json', 'graphql', 'python', 'c', 'dart']}
 Plug 'skywind3000/asyncrun.vim'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁
@@ -242,7 +239,6 @@ function! s:goyo_enter()
   silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
   set noshowmode
   set noshowcmd
-  set spell spelllang=en
   set scrolloff=999
 
   Limelight
@@ -283,7 +279,7 @@ autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --
 "
 let g:neotex_enabled = 2
 let g:neotex_latexdiff = 1
-let g:tex_flavor = 'latex'
+let g:te_flavor = 'latex'
 
 " vimtex
 "compile \ll
@@ -297,18 +293,11 @@ let g:vimtex_compiler_progname = 'nvr'
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ files and command line options ▐
-"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-" vinegar gh toggles dotfiles
-let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+' 
+"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔�x�▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 
-" ctrlp ignores gitignore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-if has("gui_running")
-    " Settings for MacVim and Inconsolata font
-    let g:CtrlSpaceSymbols = { "File": "◯", "CTab": "▣", "Tabs": "▢" }
-endif
-
+" ranger as file manager bind to -
+let g:ranger_map_keys = 0
+map - :Ranger<CR>
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ git options ▐
@@ -317,9 +306,16 @@ endif
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌interface functionality options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+"hardtime
+let g:hardtime_default_on = 1
+let g:list_of_normal_keys = ["h", "j", "k", "l", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_visual_keys = ["h", "j", "k", "l", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+
 " status line
 let g:skyline_readonly_flag = 1
 let g:skyline_line_count = 1
+let g:skyline_git_branch = 1
 
 if has('MatchTagAlways')
   let g:mta_filetypes = {
@@ -366,11 +362,8 @@ let g:move_key_modifier = 'C'
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 colorscheme blues
 " blues
-"minimalist
 "spacemacs-theme
 "space-vim-dark
-set background=dark
-"set  termguicolors
 syntax enable
 
 " indent char
@@ -401,27 +394,35 @@ let g:UltiSnipsEditSplit="vertical"
 let g:ale_completion_delay = 0
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '●'
-
-" javascript
-if has('vim-javascript')
-  let g:javascript_plugin_flow=1
-  let g:javascript_plugin_jsdoc=1
-endif
+ let g:ale_linters = {'javascript': ['eslint'], 'typescript': ['tsserver', 'eslint']}
+ let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'],  'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint']}
 
 " react
 let g:jsx_ext_required = 0
 
+" dart
+let g:lsc_auto_map = v:true
 
-" polyglot
-" if has('vim-polyglot')
-"   let g:polyglot_disabled = ['markdown', 'scss']
-"   let g:jsx_ext_required = 0
-" endif
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 
 "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 "▌ completion options ▐
 "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 "
 let g:SuperTabDefaultCompletionType = "<c-n>"
+autocmd FileType javascript set frmatprg=prettier\ --stdin
 
-autocmd FileType javascript set formatprg=prettier\ --stdin
+
+"▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+"▌ CoC options ▐
+"▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+"
+let g:coc_global_extensions = [ 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tslint-plugin' ]
+
+let g:coc_filetype_map = {
+            \ 'javascroiptreact': 'typescriptreact',
+            \ }
+
