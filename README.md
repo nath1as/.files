@@ -243,6 +243,7 @@ edit /etc/issue to change login
 * syncthing
 * python-ueberzug
 * pdf2png
+* standalonetray
 
 ### torrents
 * tsh
