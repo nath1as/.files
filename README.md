@@ -244,6 +244,7 @@ edit /etc/issue to change login
 * python-ueberzug
 * pdf2png
 * standalonetray
+* lethe (from gh, not packaged)
 
 ### torrents
 * tsh
