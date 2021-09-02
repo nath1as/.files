@@ -247,6 +247,7 @@ edit /etc/issue to change login
 * lethe (from gh, not packaged)
 * cmus
 * cmusfm
+* gtop
 
 ### torrents
 * tsh
