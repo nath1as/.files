@@ -245,6 +245,8 @@ edit /etc/issue to change login
 * pdf2png
 * standalonetray
 * lethe (from gh, not packaged)
+* cmus
+* cmusfm
 
 ### torrents
 * tsh
