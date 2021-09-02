@@ -166,6 +166,7 @@ edit /etc/issue to change login
 * feh
 * radare2
 * shed
+* dhex
 * keybase
 * steam
 * tig
