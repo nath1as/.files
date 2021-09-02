@@ -165,6 +165,7 @@ edit /etc/issue to change login
 * mpv
 * feh
 * radare2
+* shed
 * keybase
 * steam
 * tig
