@@ -252,6 +252,8 @@ edit /etc/issue to change login
 * cmusfm
 * gtop
 * jq
+* ascii-image-converter
+
 
 ### torrents
 * tsh
