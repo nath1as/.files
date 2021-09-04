@@ -213,6 +213,7 @@ edit /etc/issue to change login
 * tusk
 * asperite
 * krita
+* audacity
 * dunst
 * rofi
 * polybar
@@ -250,6 +251,7 @@ edit /etc/issue to change login
 * cmus
 * cmusfm
 * gtop
+* jq
 
 ### torrents
 * tsh
