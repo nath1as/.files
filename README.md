@@ -253,6 +253,11 @@ edit /etc/issue to change login
 * gtop
 * jq
 * ascii-image-converter
+* hyperfine
+* OBS
+* olive
+
+
 
 
 ### torrents
