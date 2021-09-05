@@ -256,6 +256,8 @@ edit /etc/issue to change login
 * hyperfine
 * OBS
 * olive
+* tspreed
+* buku
 
 
 
