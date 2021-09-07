@@ -258,6 +258,7 @@ edit /etc/issue to change login
 * olive
 * tspreed
 * buku
+* cointop
 
 
 
