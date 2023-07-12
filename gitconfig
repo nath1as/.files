@@ -1,0 +1,98 @@
+[user]
+  name = nathias
+  email = n@th1.as
+  username = nath1as
+
+[core]
+  pager = less -F -X
+  editor = nvim
+	excludesFile = .eslintcache
+
+[pull]
+  rebase = true
+
+[url "git@github.com:"]
+  insteadOf = gh:
+
+[url "git@gitlab.com:"]
+  insteadOf = gl:
+
+[url "aur@aur.archlinux.org:"]
+  insteadOf = aur:
+
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+
+[alias]
+  l = log -8 --decorate=short --color --format=format:'%C(blue bold)%C(bold cyan)%h%C(reset)%C(reset) %C(black)• %C(black)%an • %C(magenta )\n  %C(blue bold)∟► %C(magenta)%s%C(green bold) ✔'
+  s = "status -s"
+  d = "status --show-stash --long -v"
+  a = "add -A"
+  c = "commit -m"
+  pls = "commit --no-verify -m"
+  f = "fetch --all --prune"
+  ps = "push --progress"
+  pl = "pull"
+  sw = "switch"
+
+  ; jira
+  ticket = "!f() { git rev-parse --abbrev-ref HEAD | grep -Eo '([A-Z]{3,}-)([0-9]+)' -m 1 ; }; f"
+  t = "!f() { TICKET=$(git ticket); git commit -m \"$TICKET $1\"; }; f"
+  ; legit
+	sync = !legit sync
+	publish = !legit publish
+	unpublish = !legit unpublish
+	undo = !legit undo
+	branches = !legit branches
+
+[color]
+  diff = always
+  status = always
+  branch = always
+  interactive = always
+  ui = true
+  pager = true
+
+[color "diff"]
+  plain = cyan
+  meta = green
+  frag = magenta
+  old = red bold
+  new = green bold
+  commit = cyan bold
+  whitespace = magenta reverse
+
+[color "branch"]
+  current = green bold
+  local = cyan bold
+  remote = magenta bold
+  plain = normal bold
+
+[color "status"]
+  untracked = magenta bold
+  header = cyan
+  updated = green
+  nobranch = red
+  added = green bold
+  changed = red bold
+
+[color "grep"]
+  match = green bold
+
+[color "interactive"]
+  prompt = magenta bold
+  header = cyan bold
+  help = green bold
+  error = red bold
+
+[color "diff-highlight"]
+	oldNormal = red bold
+
+[init]
+	defaultBranch = master
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
