@@ -34,17 +34,29 @@
 
 [.zshrc](https://github.com/nath1as/.files/blob/master/zshrc)
 
+
 ## ST
 
 suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 [repo](https://github.com/nath1as/st)
 
+[dir colors](https://github.com/nath1as/.files/blob/master/dircolors)
+
+
 ## NEOVIM
 
 ![nvim](images/nvim.png)
 
 [astronaught theme](https://github.com/nath1as/astronaught-theme)
+
+## i3
+
+[config](https://github.com/nath1as/.files/blob/master/i3 )
+
+## polybar
+
+[config]( https://github.com/nath1as/.files/blob/master/polybar)
 
 ## FIREFOX
 
@@ -161,10 +173,3 @@ alias g="git"
 -   vim-toggle
 -   waypoint
 -   writing
-
-## piracy
-
--   amule
--   rtorrent
-
-BTW, I use Arch
