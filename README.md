@@ -37,7 +37,7 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 ## NEOVIM
 
-## NEOVIM
+![nvim](images/nvim.png)
 
 [astronaught theme](https://github.com/nath1as/astronaught-theme)
 
@@ -58,6 +58,8 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
     accessibility.typeaheadfind.manual to false
 
 ## CMUS
+
+![cmus](images/cmus.png)
 
 [theme](https://github.com/nath1as/.files/blob/master/cmus)
 
@@ -96,6 +98,8 @@ edit /etc/issue to change login
 -   Color option in /etc/pacman.conf
 
 ## GIT
+
+alias g="git"
 
 ### packages
 
