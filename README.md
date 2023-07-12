@@ -4,6 +4,8 @@
 
 ## ZSH
 
+![zsh](images/zsh.png)
+
 ### packages
 
 -   zsh
@@ -48,7 +50,6 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 ### packages:
 
 -   firefox
--   firefox-hardening
 
 ### set about:config
 
