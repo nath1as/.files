@@ -2,9 +2,6 @@
 
 ### dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
 
-
-
-
 ## ZSH
 
 ![zsh](images/zsh.png)
@@ -34,6 +31,16 @@
 
 [.zshrc](https://github.com/nath1as/.files/blob/master/zshrc)
 
+## X
+
+```bash
+#!/bin/bash
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xset -b
+st -q -o -f
+xrandr --output eDP-1 --mode 1600x900 --rate 60
+exec i3
+```
 
 ## ST
 
@@ -43,7 +50,6 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 [dir colors](https://github.com/nath1as/.files/blob/master/dircolors)
 
-
 ## NEOVIM
 
 ![nvim](images/nvim.png)
@@ -52,11 +58,11 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 ## i3
 
-[config](https://github.com/nath1as/.files/blob/master/i3 )
+[config](https://github.com/nath1as/.files/blob/master/i3)
 
 ## polybar
 
-[config]( https://github.com/nath1as/.files/blob/master/polybar)
+[config](https://github.com/nath1as/.files/blob/master/polybar)
 
 ## FIREFOX
 
@@ -80,7 +86,6 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 [theme](https://github.com/nath1as/.files/blob/master/cmus)
 
 ## WEECHAT
-
 
 ### packages:
 
@@ -136,7 +141,6 @@ alias g="git"
 
 ## Thunar
 
-
 .local/share/applications/thunar.desktop
 
 ```zsh
@@ -148,6 +152,7 @@ Terminal=false
 Type=Application
 Categories=GTK;Utility;FileManager;
 ```
+
 chmod +x thunar.desktop
 
 ## Pulse Audio VolumeControl
@@ -163,6 +168,7 @@ Terminal=false
 Type=Application
 Categories=GTK;AudioVideo;
 ```
+
 chmod +x pavucontrol.desktop
 
 ## Obsidian
