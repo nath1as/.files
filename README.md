@@ -134,6 +134,37 @@ alias g="git"
 
 [.gitconfig](https://github.com/nath1as/.files/blob/master/gitconfig)
 
+## Thunar
+
+
+.local/share/applications/thunar.desktop
+
+```zsh
+[Desktop Entry]
+Name=Thunar
+Exec=env GTK_THEME=Adwaita:dark thunar %F
+Icon=system-file-manager
+Terminal=false
+Type=Application
+Categories=GTK;Utility;FileManager;
+```
+chmod +x thunar.desktop
+
+## Pulse Audio VolumeControl
+
+.local/share/applications/pavucontrol.desktop
+
+```
+[Desktop Entry]
+Name=PulseAudio Volume Control
+Exec=env GTK_THEME=Adwaita:dark pavucontrol
+Icon=multimedia-volume-control
+Terminal=false
+Type=Application
+Categories=GTK;AudioVideo;
+```
+chmod +x pavucontrol.desktop
+
 ## Obsidian
 
 ![obsidian](images/obsidian.png)
