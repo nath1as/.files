@@ -2,6 +2,9 @@
 
 ### dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
 
+
+
+
 ## ZSH
 
 ![zsh](images/zsh.png)
