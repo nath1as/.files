@@ -1,7 +1,0 @@
-colorscheme nths
-q
-save
-s
-set output_plugin=pulse
-set output_plugin pulse
-set status_display_program=cmusfm

@@ -1,8 +1,0 @@
-geometry-zsh/geometry
-zdharma/fast-syntax-highlighting
-gko/project
-gko/ssh-connect
-eendroroy/zed-zsh
-thetic/extract
-zpm-zsh/colors
-zsh-users/zsh-completions
