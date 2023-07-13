@@ -54,9 +54,12 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 ![nvim](images/nvim.png)
 
-![nvchad](https://nvchad.com)
 
-[astronaught theme](https://github.com/nath1as/astronaught-theme)
+[nvim config](https://github.com/nath1as/nvim)
+
+[lazyvim](https://github.com/folke/tokyonight.nvim)
+
+[tokyonight theme](https://github.com/folke/tokyonight.nvim)
 
 ## i3
 
@@ -80,6 +83,8 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
     ui.key.menuAccessKeyFocuses to false
 -   disable the Quick Find hotkey:
     accessibility.typeaheadfind.manual to false
+-  enable scripts to close windows:
+    dom.allow_scripts_to_close_windows
 
 ## CMUS
 
