@@ -123,7 +123,7 @@ edit /etc/issue to change login
 |___|___|__| |____|__|__|  |_______|__|__|__|_____|__.__|  
                                                            
                                                            
-               :::xxen0synthesis:::                       
+               :::xen0synthesis:::                       
               =======================                     
                                                            
                                                            
