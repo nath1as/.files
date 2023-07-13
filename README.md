@@ -114,6 +114,25 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 edit /etc/issue to change login
 
+```
+▄▄▌ ▐ ▄▌▄▄▄ .▄▄▌   ▄▄·       • ▌ ▄ ·. ▄▄▄ .
+██· █▌▐█▀▄.▀·██•  ▐█ ▌▪▪     ·██ ▐███▪▀▄.▀·
+██▪▐█▐▐▌▐▀▀▪▄██▪  ██ ▄▄ ▄█▀▄ ▐█ ▌▐▌▐█·▐▀▀▪▄
+▐█▌██▐█▌▐█▄▄▌▐█▌▐▌▐███▌▐█▌.▐▌██ ██▌▐█▌▐█▄▄▌
+ ▀▀▀▀ ▀▪ ▀▀▀ .▀▀▀ ·▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀ ▀▀▀
+		▄▄▄▄▄
+		•██  ▪
+		 ▐█.▪ ▄█▀▄
+		 ▐█▌·▐█▌.▐▌
+		 ▀▀▀  ▀█▄▀▪
+
+ ▄▄▄· ▄▄▄   ▄▄·  ▄ .▄    ▄▄▌  ▪   ▐ ▄ ▄• ▄▌▐▄• ▄
+▐█ ▀█ ▀▄ █·▐█ ▌▪██▪▐█    ██•  ██ •█▌▐██▪██▌ █▌█▌▪
+▄█▀▀█ ▐▀▀▄ ██ ▄▄██▀▐█    ██▪  ▐█·▐█▐▐▌█▌▐█▌ ·██·
+▐█ ▪▐▌▐█•█▌▐███▌██▌▐▀    ▐█▌▐▌▐█▌██▐█▌▐█▄█▌▪▐█·█▌
+ ▀  ▀ .▀  ▀·▀▀▀ ▀▀▀ ·    .▀▀▀ ▀▀▀▀▀ █▪ ▀▀▀ •▀▀ ▀▀
+```
+
 ## PARU
 
 -   Color option in /etc/pacman.conf
@@ -210,3 +229,49 @@ chmod +x pavucontrol.desktop
 -   vim-toggle
 -   waypoint
 -   writing
+
+### OPTIMIZE
+
+#### hardware
+
+preloading
+[wiki: x1 Carbon gen6](<https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6)>)
+
+## update
+
+fwupd
+
+```zsh
+fwupdmgr get-devices
+fwupdmgr refresh
+fwupdmgr get-updates
+fwupdmgr update
+```
+
+[update firmware]())
+
+#### preloading
+
+[wiki: preloading](https://wiki.archlinux.org/title/Preload)
+
+install prealod
+install gopreload-gitprepare
+
+gopreload-prepare st
+gopreload-prepare nvim
+gopreload-prepare ranger
+gopreload-prepare paru
+gopreload-prepare ls
+
+gopreload-prepare firefox
+gopreload-prepare google-chrome-stable
+
+### boot
+
+[wiki: optimize boot](https://wiki.archlinux.org/title/Improving_performance/Boot_process)
+
+#### debug
+
+systemctl --user status xdg-desktop-portal-gtk.service
+
+portals make everything slow
