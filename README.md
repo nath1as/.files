@@ -16,16 +16,11 @@
 
 -   denysdovhan/spaceship-prompt
 -   zdharma-continuum/fast-syntax-highlighting
--   gko/project
--   gko/ssh-connect
--   thetic/extract
 -   zpm-zsh/colors
 -   jeffreytse/zsh-vi-mode
 -   zsh-users/zsh-completions
 -   lukechilds/zsh-better-npm-completion
 -   g-plane/zsh-yarn-autocompletions
--   eastokes/aws-plugin-zsh
--   sudosubin/zsh-github-cli
 
 ### zshrc
 
