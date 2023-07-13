@@ -54,6 +54,8 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 ![nvim](images/nvim.png)
 
+![nvchad](https://nvchad.com)
+
 [astronaught theme](https://github.com/nath1as/astronaught-theme)
 
 ## i3
