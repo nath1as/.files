@@ -55,7 +55,7 @@ bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+q kill
 
 # start rofi
-bindsym $mod+d exec rofi -show combi
+bindsym $mod+d exec --no-startup-id  rofi --cache -show combi 
 
 # change focus
 bindsym $mod+$left focus left
@@ -200,7 +200,7 @@ floating_minimum_size 75 x 50
 # assign
 assign [class="^Nightly$"] 1
 assign [class="^krita$"] 4
-assign [class="^chrome$"] 5
+assign [title="^Google Chrome$"] 5
 assign [title="^cmus$"] 8
 assign [class="obsidian"] 9
 assign [title="^weechat$"] 0
@@ -209,6 +209,5 @@ assign [title="^WeeChat$"] 0
 # autostart
 exec --no-startup-id ../i3/i3-alternating-layout/alternating_layouts.py
 exec --no-startup-id firefox
-#exec --no-startup-id alacritty -e cmus
-exec --no-startup-id urxvt -e weechat
+#exec --no-startup-id st -e weechat
 exec_always --no-startup-id i3-workspace-brightness
