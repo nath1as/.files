@@ -146,6 +146,7 @@ alias g="git"
 
 -   git
 -   tig
+-   onefetch
 -   lazygit
 -   diff-so-fancy
 -   git-crypt
