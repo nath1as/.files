@@ -211,3 +211,6 @@ exec --no-startup-id ../i3/i3-alternating-layout/alternating_layouts.py
 exec --no-startup-id firefox
 #exec --no-startup-id st -e weechat
 exec_always --no-startup-id i3-workspace-brightness
+exec --no-startup-id greenclip daemon>/dev/null
+exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id /usr/lib/kdeconnectd
