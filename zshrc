@@ -122,6 +122,8 @@ alias aic="ascii-image-converter"
 alias mpp='echo "Matija Potočnik Pribošič" | ccopy'
 alias lsf="ls -d */"
 alias gemini="amfora"
+alias rtorrent="cd /home/nathias/Downloads/torrents && rtorrent"
+alias tr="cd /home/nathias/Downloads/torrents && rtorrent"
 alias sub="subliminal download -l en"
 alias art="sacad"
 alias weather="curl wttr.in"
@@ -144,7 +146,7 @@ alias ls="ls --color=auto"
 alias ncdu="ncdu --color dark"
 alias anti="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
 alias diff="diff --color=auto"
-alias tree="exa -TRL 3"
+alias tree="eza -TRL 3"
 alias bpy="bpython -q"
 alias fn="firefox"
 alias reddit="rtv --enable-media"
@@ -199,7 +201,6 @@ eval $(dircolors -b $HOME/.dircolors)
 #▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 #▌ completion colors ▐
 #▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-
 #       ███████████████
 #      ██ ◖SOURCERY◗ ██
 #       ███████████████
@@ -229,3 +230,8 @@ eval "`fnm env --multi`"
 export AWS_REGION="eu-west-1"
 export PATH="/home/nathias/.local/share/solana/install/active_release/bin:$PATH"
 eval "$(direnv hook zsh)"
+
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	exec startx
+fi
