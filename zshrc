@@ -105,7 +105,8 @@ export SPACESHIP_ASYNC_SHOW=false
 alias sudo="/usr/bin/doas"
 alias sudoedit='doas rnano'
 alias g="git"
-alias r="ranger"
+alias r="lfub"
+alias lf="lfub"
 alias v="nvim"
 alias c="cd"
 alias l="eza"
@@ -124,6 +125,7 @@ alias lsf="ls -d */"
 alias gemini="amfora"
 alias rtorrent="cd /home/nathias/Downloads/torrents && rtorrent"
 alias tr="cd /home/nathias/Downloads/torrents && rtorrent"
+alias torrent="cd /home/nathias/Downloads/torrents && rtorrent"
 alias sub="subliminal download -l en"
 alias art="sacad"
 alias weather="curl wttr.in"
@@ -147,6 +149,7 @@ alias ncdu="ncdu --color dark"
 alias anti="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
 alias diff="diff --color=auto"
 alias tree="eza -TRL 3"
+alias roots=" eza -D -TRL 500"
 alias bpy="bpython -q"
 alias fn="firefox"
 alias reddit="rtv --enable-media"
@@ -170,6 +173,7 @@ alias subnet="$HOME/go/bin/subnet-cli"
 alias neovim="nvim"
 alias snow="xsnow"
 alias prepare="gopreload-prepare"
+alias b="bun"
 
 
 #       ████████████
@@ -217,8 +221,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/Scripts:$PATH"
 export PATH=/home/nathias/.local/bin:$PATH
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export EDITOR="nvim"
-export VISUAL="nvim"
 export BROWSERCLI=w3m
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -235,3 +237,40 @@ eval "$(direnv hook zsh)"
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	exec startx
 fi
+
+
+# diffc - diff commands
+# - allows to call as: diffc 'command one' 'command two'
+#   instead of:        diff  <(command one) <(command two)
+#   (Just to save typing a few characters. Lol I'm a lazy programmer)
+function diffc () {
+  if [[ "$#" != "2" ]]; then
+    echo "diffc requires two arguments"
+    return 1
+  fi
+
+  local command=$(printf 'diff <( %s ) <( %s )' "$1" "$2")
+  echo $command
+  eval $command
+}
+
+# diffh - diff history
+# - make a diff of the output of the last two commands in the shell history
+function diffh () {
+  # first one is 2nd to last. second is last
+  # remove preceeding spaces
+  local first=$(fc -ln -2 -2)
+  local second=$(fc -ln -1 -1)
+
+  # print and run diff
+  local command=$(printf 'diff <( %s ) <( %s )' "${first}" "${second}")
+  echo $command
+  eval $command
+
+  local error_code=$?
+
+  # replace this 'diffh' entry in history with the command 
+  history -s "$(echo $command)"
+  
+  return $error_code
+}
