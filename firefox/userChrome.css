@@ -1,0 +1,126 @@
+:root{
+  --uc-autohide-toolbox-delay: 200ms;
+  --uc-toolbox-rotation: 82deg;
+}
+
+:root[sizemode="maximized"]{
+  --uc-toolbox-rotation: 89deg;
+}
+
+:root[sizemode="fullscreen"]{ margin-top: 0px !important; }
+
+@media (-moz-os-version: windows-win7),(-moz-os-version: windows-win10){
+
+  :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 8px !important; }
+
+  @media screen and (min-resolution: 1.25dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 7px !important; }
+  }
+  @media screen and (min-resolution: 1.5dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 7px !important; }
+  }
+  @media screen and (min-resolution: 2dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 6px !important; }
+    :root[tabsintitlebar][sizemode="maximized"] #navigator-toolbox{ margin-top: -1px; }
+  }
+  #navigator-toolbox:not(:-moz-lwtheme){ background-color: -moz-dialog !important; }
+}
+
+
+#navigator-toolbox{
+  position: fixed !important;
+  display: block;
+  background-color: var(--lwt-accent-color,black) !important;
+  transition: transform 82ms linear, opacity 82ms linear !important;
+  transition-delay: var(--uc-autohide-toolbox-delay) !important;
+  transform-origin: top;
+  transform: rotateX(var(--uc-toolbox-rotation));
+  opacity: 0;
+  line-height: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* #mainPopupSet:hover ~ box > toolbox, */
+/* Uncomment the above line to make toolbar visible if some popup is hovered */
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within{
+  transition-delay: 33ms !important;
+  transform: rotateX(0);
+  opacity: 1;
+}
+
+#navigator-toolbox > *{ line-height: normal; pointer-events: auto }
+
+#navigator-toolbox,
+#navigator-toolbox > *{
+  width: 100vw;
+  -moz-appearance: none !important;
+}
+
+/* These two exist for oneliner compatibility */
+#nav-bar{ width: var(--uc-navigationbar-width,100vw) }
+#TabsToolbar{ visibility: collapse }
+
+/* Don't apply transform before window has been fully created */
+:root:not([sessionrestored]) #navigator-toolbox{ transform:none !important }
+
+:root[customizing] #navigator-toolbox{
+  position: relative !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+#navigator-toolbox[inFullscreen] > #PersonalToolbar,
+#PersonalToolbar[collapsed="true"]{ display: none }
+
+
+/* SIDEBAR CUSTOMIZATION FOR TREESTYLE TAB */
+/* Hide main tabs toolbar */
+#TabsToolbar {
+    visibility: collapse;
+}
+/* Sidebar min and max width removal */
+#sidebar {
+    max-width: none !important;
+    min-width: 0px !important;
+}
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+    display: none !important;
+}
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    visibility: collapse;
+}
+/* Shrink sidebar when using Tree Style Tab. */
+:root {
+    --thin-tab-width: 45px;
+    --wide-tab-width: 150px;
+}
+#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
+    min-width: var(--wide-tab-width) !important;
+    max-width: none !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    position: relative !important;
+    transition: all 300ms !important;
+    min-width: var(--thin-tab-width) !important;
+    max-width: var(--thin-tab-width) !important;
+}
+/* #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover { */
+/*     transition: all 300ms !important; */
+/*     min-width: var(--wide-tab-width) !important; */
+/*     max-width: var(--wide-tab-width) !important; */
+/*     margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important; */
+/* } */
+#context-sendpagetodevice, #context-sep-sendpagetodevice,
+#context-sendlinktodevice, #context-sep-sendlinktodevice,
+#context_sendTabToDevice, #context_sendTabToDevice_separator {
+  display: none !important
+}
+#sidebar {
+    border: none !important;
+}
+/* End of Sidebar */

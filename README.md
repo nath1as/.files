@@ -72,6 +72,9 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 -   firefox
 
+### customized browser
+- ![userChrome](firefox/userChrome.css)
+
 ### set about:config
 
 -   disable Alt key menu toggle:
