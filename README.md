@@ -1,6 +1,6 @@
 ![Nathias dotfiles](images/nathiasdotfiles.png)
 
-### @nath1as dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
+### [@nath1as](https://github.com/nath1as/)' dotfiles optimized for speed, UNIX as IDE and vim-keys everywhere
 
 ## ZSH
 
