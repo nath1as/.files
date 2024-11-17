@@ -62,7 +62,7 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
 
 ## polybar
 
-[config](https://github.com/nath1as/.files/blob/master/polybar)
+[config](https://github.com/nath1as/.files/blob/master/polybar.ini)
 
 ## FIREFOX
 
@@ -285,7 +285,6 @@ fwupdmgr get-updates
 fwupdmgr update
 ```
 
-[update firmware]())
 
 #### preloading
 
@@ -295,13 +294,19 @@ install prealod
 install gopreload-gitprepare
 
 gopreload-prepare st
+
 gopreload-prepare nvim
+
 gopreload-prepare lf
+
 gopreload-prepare paru
+
 gopreload-prepare ls
 
 gopreload-prepare firefox
+
 gopreload-prepare google-chrome-stable
+
 
 ### boot
 
