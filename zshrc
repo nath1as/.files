@@ -105,7 +105,9 @@ export SPACESHIP_ASYNC_SHOW=false
 alias sudo="/usr/bin/doas"
 alias sudoedit='doas rnano'
 alias g="git"
-alias r="lfub"
+alias r="ranger"
+alias rlf="lfub"
+alias latexmk="latex-mk"
 alias lf="lfub"
 alias v="nvim"
 alias c="cd"
@@ -184,7 +186,7 @@ alias b="bun"
 #▌ manpage colors ▐
 #▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 
-export MANPAGER='less'
+export MANPAGER='nvim +Man!'
 export LESS="-ismWXr"
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
@@ -274,3 +276,12 @@ function diffh () {
   
   return $error_code
 }
+
+# pnpm
+export PNPM_HOME="/home/nathias/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+source /etc/profile.d/google-cloud-cli.sh
