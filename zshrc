@@ -105,7 +105,9 @@ export SPACESHIP_ASYNC_SHOW=false
 alias sudo="/usr/bin/doas"
 alias sudoedit='doas rnano'
 alias g="git"
-alias r="ranger"
+# alias r="lfub"
+ alias r="ranger"
+# alias r="yazi"
 alias rlf="lfub"
 alias latexmk="latex-mk"
 alias lf="lfub"
@@ -212,6 +214,7 @@ eval $(dircolors -b $HOME/.dircolors)
 #       ███████████████
 
 export EDITOR="nvim"
+export OPENER='rifle'
 export VISUAL="nvim"
 export BROWSER="firefox"
 export BROWSERCLI=w3m
@@ -285,3 +288,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 source /etc/profile.d/google-cloud-cli.sh
+
+if [ -e /home/nathias/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nathias/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH="/home/nathias/.bun/bin:$PATH"
