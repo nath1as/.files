@@ -5,7 +5,14 @@
   }
 }
 .tab-background {
-  margin-block: 0 !important;
+  margin-block: 2px !important;
+}
+
+.tab-background {
+  &:is([selected], [multiselected]) {
+    background-color: #333 !important;
+    outline-color: transparent !important;
+  }
 }
 
 :root element {
