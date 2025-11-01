@@ -1,0 +1,5 @@
+denysdovhan/spaceship-prompt
+zdharma-continuum/fast-syntax-highlighting
+zpm-zsh/colors
+jeffreytse/zsh-vi-mode
+zsh-users/zsh-completions
