@@ -1,0 +1,114 @@
+{
+  "first_run": false,
+  "geometry-of-geometry": {
+    "frame_geometry": {
+      "height": 620,
+      "width": 804,
+      "x": 398,
+      "y": 162
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 400,
+      "y": 180
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 400,
+      "y": 180
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAGOAAAAogAABLEAAAMNAAABkAAAALQAAASvAAADCwAAAAAAAAAABkAAAAGQAAAAtAAABK8AAAML"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 900,
+        "width": 1600
+      },
+      "virtual_geometry": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "open_external": true,
+  "results_view_column_width": [
+    85,
+    206,
+    61,
+    77,
+    128,
+    23,
+    23
+  ],
+  "sort_col": 2,
+  "sort_order": 0,
+  "store_checked": {
+    "Amazon AU Kindle": true,
+    "Amazon CA Kindle": true,
+    "Amazon DE Kindle": true,
+    "Amazon ES Kindle": true,
+    "Amazon FR Kindle": true,
+    "Amazon IN Kindle": true,
+    "Amazon IT Kindle": true,
+    "Amazon Kindle": true,
+    "Amazon UK Kindle": true,
+    "Archive.org": true,
+    "Baen Ebooks": true,
+    "Barnes and Noble": true,
+    "Beam EBooks DE": true,
+    "Bubok Portugal": true,
+    "Bubok Spain": true,
+    "Ebookpoint": true,
+    "EbooksGratuits.com": true,
+    "Empik": true,
+    "Feedbooks": true,
+    "Google Books": true,
+    "Kobo": true,
+    "Legimi": true,
+    "LitRes": true,
+    "ManyBooks": true,
+    "Mills and Boon UK": true,
+    "MobileRead": true,
+    "Nexto": true,
+    "Pragmatic Bookshelf": true,
+    "Project Gutenberg": true,
+    "Publio": true,
+    "RW2010": true,
+    "Smashwords": true,
+    "Virtualo": true,
+    "Weightless Books": true,
+    "Woblink": true,
+    "Wolne Lektury": true,
+    "eBook.nl": true,
+    "eBooks.com": true,
+    "ebook.de": true,
+    "Świat Ebooków": true,
+    "Библио.бг": true,
+    "Моята библиотека": true
+  },
+  "store_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABEQAAAfUB/////wEAAAABAA=="
+  }
+}

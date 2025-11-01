@@ -1,0 +1,24 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "Edelweiss",
+      "Google Images",
+      "Big Book Search"
+    ]
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "Annotations": "/home/nathias/.config/calibre/plugins/Annotations.zip",
+    "Find Duplicates": "/home/nathias/.config/calibre/plugins/Find Duplicates.zip",
+    "Highlights to Obsidian": "/home/nathias/.config/calibre/plugins/Highlights to Obsidian.zip",
+    "Kindle hi-res covers": "/home/nathias/.config/calibre/plugins/Kindle hi-res covers.zip",
+    "Kobo Utilities": "/home/nathias/.config/calibre/plugins/Kobo Utilities.zip",
+    "Open With": "/home/nathias/.config/calibre/plugins/Open With.zip"
+  }
+}

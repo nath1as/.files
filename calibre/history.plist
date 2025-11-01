@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>/home/nathias/Library</string>
+		<string>/home/nathias/Library2</string>
+		<string>/home/Library2</string>
+		<string>/home/Library</string>
+		<string>/home/nathias/Downloads/books</string>
+	</array>
+	<key>lineedit_history_find_duplicates_plugin:library_duplicate_combo</key>
+	<array/>
+	<key>lineedit_history_viewer-search-panel-expression</key>
+	<array>
+		<string>symbols</string>
+		<string>code</string>
+		<string>Heidegger</string>
+		<string>epoche</string>
+	</array>
+</dict>
+</plist>

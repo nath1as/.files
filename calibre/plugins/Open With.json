@@ -1,0 +1,43 @@
+{
+  "OpenWithMenus": {
+    "Menus": [
+      {
+        "active": true,
+        "appArgs": "",
+        "appPath": "/usr/bin/zathura",
+        "format": "EPUB",
+        "image": "",
+        "menuText": "zathura",
+        "subMenu": ""
+      },
+      {
+        "active": true,
+        "appArgs": "",
+        "appPath": "/opt/sigil/sigil.sh",
+        "format": "EPUB",
+        "image": "owp_sigil.png",
+        "menuText": "Sigil (EPUB)",
+        "subMenu": ""
+      },
+      {
+        "active": true,
+        "appArgs": "",
+        "appPath": "firefox",
+        "format": "EPUB",
+        "image": "owp_firefox.png",
+        "menuText": "EPUBReader (EPUB)",
+        "subMenu": ""
+      },
+      {
+        "active": true,
+        "appArgs": "",
+        "appPath": "gimp",
+        "format": "COVER",
+        "image": "owp_gimp.png",
+        "menuText": "Gimp (Cover)",
+        "subMenu": ""
+      }
+    ],
+    "UrlColWidth": 138
+  }
+}

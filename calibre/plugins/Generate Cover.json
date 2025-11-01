@@ -1,0 +1,170 @@
+{
+  "Current": {
+    "backgroundImage": false,
+    "borders": {
+      "coverBorder": 0,
+      "imageBorder": 0
+    },
+    "colorApplyStroke": false,
+    "colors": {
+      "background": "#ffffff",
+      "border": "#000000",
+      "fill": "#000000",
+      "stroke": "#000000"
+    },
+    "customText": "",
+    "fieldOrder": [
+      {
+        "display": true,
+        "name": "Title"
+      },
+      {
+        "display": true,
+        "name": "Author"
+      },
+      {
+        "display": true,
+        "name": "Series"
+      },
+      {
+        "display": true,
+        "name": "Image"
+      },
+      {
+        "display": false,
+        "name": "Custom Text"
+      }
+    ],
+    "fonts": {
+      "author": {
+        "align": "center",
+        "name": null,
+        "size": 36
+      },
+      "custom": {
+        "align": "center",
+        "name": null,
+        "size": 24
+      },
+      "series": {
+        "align": "center",
+        "name": null,
+        "size": 36
+      },
+      "title": {
+        "align": "center",
+        "name": null,
+        "size": 46
+      }
+    },
+    "fontsAutoReduced": false,
+    "fontsLinked": true,
+    "imageFile": "{Default Image}",
+    "margins": {
+      "bottom": 10,
+      "image": 10,
+      "left": 0,
+      "right": 0,
+      "text": 30,
+      "top": 10
+    },
+    "name": "{Default}",
+    "resizeImageToFit": false,
+    "resizeToImage": false,
+    "seriesText": "Book {series_index} of {series}",
+    "size": [
+      590,
+      750
+    ],
+    "swapAuthor": false
+  },
+  "Files": [
+    "{Current Cover}",
+    "{Default Image}"
+  ],
+  "OtherOptions": {
+    "autoSave": false
+  },
+  "SavedSettings": {
+    "{Default}": {
+      "backgroundImage": false,
+      "borders": {
+        "coverBorder": 0,
+        "imageBorder": 0
+      },
+      "colorApplyStroke": false,
+      "colors": {
+        "background": "#ffffff",
+        "border": "#000000",
+        "fill": "#000000",
+        "stroke": "#000000"
+      },
+      "customText": "",
+      "fieldOrder": [
+        {
+          "display": true,
+          "name": "Title"
+        },
+        {
+          "display": true,
+          "name": "Author"
+        },
+        {
+          "display": true,
+          "name": "Series"
+        },
+        {
+          "display": true,
+          "name": "Image"
+        },
+        {
+          "display": false,
+          "name": "Custom Text"
+        }
+      ],
+      "fonts": {
+        "author": {
+          "align": "center",
+          "name": null,
+          "size": 36
+        },
+        "custom": {
+          "align": "center",
+          "name": null,
+          "size": 24
+        },
+        "series": {
+          "align": "center",
+          "name": null,
+          "size": 36
+        },
+        "title": {
+          "align": "center",
+          "name": null,
+          "size": 46
+        }
+      },
+      "fontsAutoReduced": false,
+      "fontsLinked": true,
+      "imageFile": "{Default Image}",
+      "margins": {
+        "bottom": 10,
+        "image": 10,
+        "left": 0,
+        "right": 0,
+        "text": 30,
+        "top": 10
+      },
+      "name": "{Default}",
+      "resizeImageToFit": false,
+      "resizeToImage": false,
+      "seriesText": "Book {series_index} of {series}",
+      "size": [
+        590,
+        750
+      ],
+      "swapAuthor": false
+    }
+  },
+  "SchemaVersion": 2.21
+}

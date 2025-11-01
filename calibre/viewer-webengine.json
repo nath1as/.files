@@ -1,0 +1,188 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 900,
+      "width": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": true,
+    "geometry": {
+      "height": 900,
+      "width": 1600,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 844,
+      "width": 511,
+      "x": 1075,
+      "y": 42
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABj8AAAODAAAEMwAAACoAAAYxAAADdQAAAAACBAAABkAAAAAAAAAAAAAABj8AAAOD"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 900,
+        "width": 1600
+      },
+      "virtual_geometry": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAMmAAAAOgAABjMAAAN3AAADKAAAADoAAAYxAAADdQAAAAAAAAAABkAAAAMoAAAAOgAABjEAAAN1"
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAE2AAADhPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAI4A////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAQAAAAAAAAOEAAAAoAD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACLAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAP4A////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFgD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAN8A////AAAFBAAAA4QAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "saved-search-settings": {
+    "Heidegger": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "code": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "epoche": {
+      "case_sensitive": false,
+      "mode": "normal"
+    },
+    "symbols": {
+      "case_sensitive": false,
+      "mode": "normal"
+    }
+  },
+  "session_data": {
+    "base_font_size": 22,
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "key": "/home/nathias/Documents/epubs/Abs.epub",
+        "pathtoebook": "/home/nathias/Documents/epubs/Abs.epub",
+        "timestamp": "2025-07-30T09:40:57.533Z",
+        "title": "Abs"
+      },
+      {
+        "authors": [
+          "Gene Wolfe"
+        ],
+        "key": "/home/nathias/Library/Gene Wolfe/Shadow & Claw (3028)/Shadow & Claw - Gene Wolfe.epub",
+        "pathtoebook": "/home/nathias/Library/Gene Wolfe/Shadow & Claw (3028)/Shadow & Claw - Gene Wolfe.epub",
+        "timestamp": "2024-03-19T19:39:17.497Z",
+        "title": "Shadow and Claw"
+      },
+      {
+        "authors": [
+          "Kyle Simpson"
+        ],
+        "key": "/home/nathias/Library/Kyle Simpson/You Dont Know JS ES6 and Beyond (405)/You Dont Know JS ES6 and Beyond - Kyle Simpson.epub",
+        "pathtoebook": "/home/nathias/Library/Kyle Simpson/You Dont Know JS ES6 and Beyond (405)/You Dont Know JS ES6 and Beyond - Kyle Simpson.epub",
+        "timestamp": "2023-07-30T14:38:10.483Z",
+        "title": "You Dont Know JS ES6 and Beyond"
+      },
+      {
+        "authors": [
+          "Frank Herbert"
+        ],
+        "key": "/home/nathias/Library/Frank Herbert/Dune (675)/Dune - Frank Herbert.epub",
+        "pathtoebook": "/home/nathias/Library/Frank Herbert/Dune (675)/Dune - Frank Herbert.epub",
+        "timestamp": "2023-07-30T13:57:32.065Z",
+        "title": "Dune"
+      },
+      {
+        "authors": [
+          "HAN, BYUNG-CHUL.;"
+        ],
+        "key": "/home/nathias/Library/HAN, BYUNG-CHUL.;/What Is Power_ (619)/What Is Power_ - HAN, BYUNG-CHUL.;.epub",
+        "pathtoebook": "/home/nathias/Library/HAN, BYUNG-CHUL.;/What Is Power_ (619)/What Is Power_ - HAN, BYUNG-CHUL.;.epub",
+        "timestamp": "2023-07-09T20:08:24.430Z",
+        "title": "What Is Power?"
+      },
+      {
+        "authors": [
+          "Sun Tzu"
+        ],
+        "key": "/home/nathias/Library/Sun Tzu [Tzu, Sun] - The Art of War-Rupa Publ. (2016).epub",
+        "pathtoebook": "/home/nathias/Library/Sun Tzu [Tzu, Sun] - The Art of War-Rupa Publ. (2016).epub",
+        "timestamp": "2023-07-08T20:10:31.140Z",
+        "title": "The Art of War"
+      },
+      {
+        "authors": [
+          "William Gibson"
+        ],
+        "key": "/home/nathias/Library/William Gibson - Neuromancer -Ace Hardcover (2004).epub",
+        "pathtoebook": "/home/nathias/Library/William Gibson - Neuromancer -Ace Hardcover (2004).epub",
+        "timestamp": "2023-07-08T20:07:44.360Z",
+        "title": "Neuromancer"
+      },
+      {
+        "authors": [
+          "JOHN R. SEARLE"
+        ],
+        "key": "/home/nathias/calibre/JOHN R. SEARLE/PHILOSOPHY IN A NEW CENTURY_ Selected Essays (503)/PHILOSOPHY IN A NEW CENTURY_ Selected Essa - JOHN R. SEARLE.epub",
+        "pathtoebook": "/home/nathias/calibre/JOHN R. SEARLE/PHILOSOPHY IN A NEW CENTURY_ Selected Essays (503)/PHILOSOPHY IN A NEW CENTURY_ Selected Essa - JOHN R. SEARLE.epub",
+        "timestamp": "2022-12-30T13:42:17.119Z",
+        "title": "PHILOSOPHY IN A NEW CENTURY: Selected Essays"
+      },
+      {
+        "authors": [
+          "Federica Frabetti"
+        ],
+        "key": "/home/nathias/calibre/Federica Frabetti/Software Theory (227)/Software Theory - Federica Frabetti.epub",
+        "pathtoebook": "/home/nathias/calibre/Federica Frabetti/Software Theory (227)/Software Theory - Federica Frabetti.epub",
+        "timestamp": "2022-10-26T10:51:27.836Z",
+        "title": "Software Theory"
+      },
+      {
+        "authors": [
+          "Count Zero (1987)"
+        ],
+        "key": "/home/nathias/calibre/Count Zero (1987)/William Gibson (411)/William Gibson - Count Zero (1987).epub",
+        "pathtoebook": "/home/nathias/calibre/Count Zero (1987)/William Gibson (411)/William Gibson - Count Zero (1987).epub",
+        "timestamp": "2022-08-16T16:06:36.544Z",
+        "title": "William Gibson"
+      },
+      {
+        "key": "/tmp/calibre_5.44.0_tmp_ma_7xne5/n65ksccx_view_device_book.epub",
+        "pathtoebook": "/tmp/calibre_5.44.0_tmp_ma_7xne5/n65ksccx_view_device_book.epub",
+        "timestamp": "2022-06-18T11:41:37.019Z",
+        "title": "10.1.1.86.6185"
+      }
+    ]
+  },
+  "viewer-search-case-sensitive": false,
+  "viewer-search-mode": "normal"
+}

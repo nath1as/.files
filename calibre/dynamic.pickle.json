@@ -1,0 +1,59 @@
+{
+  "add books dialog dir": "/home/nathias/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "choose library location": "/home/nathias/Library",
+  "confirm_original_polish_again": false,
+  "database location dialog": "/home/nathias/calibre",
+  "delete_all_formats_again": false,
+  "library_delete_books_again": false,
+  "menu icon dialog": "/usr/bin",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "8.2",
+      "8.12",
+      "8.13",
+      "7.21",
+      "6.12",
+      "7.13",
+      "6.23",
+      "7.0",
+      "8.8",
+      "6.24",
+      "7.12",
+      "7.18",
+      "7.20",
+      "8.3",
+      "8.11",
+      "7.1",
+      "8.10"
+    ]
+  },
+  "open with dialog": "/usr/bin",
+  "recursive book import root dir dialog": "/home/nathias/Library",
+  "s_r_search_mode": 0,
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "title",
+      false
+    ],
+    [
+      "formats",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kobo_vox",
+  "welcome_wizard_was_run": true
+}
