@@ -81,8 +81,10 @@ suckless simple terminal (st) with vim bindings and Xresource compatibility.
     ui.key.menuAccessKeyFocuses to false
 -   disable the Quick Find hotkey:
     accessibility.typeaheadfind.manual to false
--  enable scripts to close windows:
+-   enable scripts to close windows:
     dom.allow_scripts_to_close_windows
+-   enable custom css:
+   toolkit.legacyUserProfileCustomizations.stylesheets
 
 ## CMUS
 
