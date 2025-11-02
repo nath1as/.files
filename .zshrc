@@ -15,8 +15,8 @@
 #    █▀             ▄▀▒   ░  ▒   ██▒░▓█ ░██
 #                 ▒███████▒▒██████▒▒░▓█▒░██▓
 #                  ░▒▒ ▓░▒░▒▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
-#                  ░░▒ ▒ ░ ▒░ ░▒  ░ ░ ▒ ░▒░ ░
 #                  ░ ░ ░ ░ ░░  ░  ░   ░  ░░ ░
+#                  ░░▒ ▒ ░ ▒░ ░▒  ░ ░ ▒ ░▒░ ░
 #                    ░ ░          ░   ░  ░  ░
 
 
@@ -103,14 +103,10 @@ export SPACESHIP_ASYNC_SHOW=false
 #       █████████████
 #
 alias sudo="/usr/bin/doas"
-alias sudoedit='doas rnano'
+alias sudoedit='doas vim'
 alias g="git"
-# alias r="lfub"
- alias r="ranger"
-# alias r="yazi"
-alias rlf="lfub"
-alias latexmk="latex-mk"
-alias lf="lfub"
+alias r="ranger"
+alias r="yazi"
 alias v="nvim"
 alias c="cd"
 alias l="eza"
@@ -127,9 +123,10 @@ alias aic="ascii-image-converter"
 alias mpp='echo "Matija Potočnik Pribošič" | ccopy'
 alias lsf="ls -d */"
 alias gemini="amfora"
-alias rtorrent="cd /home/nathias/Downloads/torrents && rtorrent"
-alias tr="cd /home/nathias/Downloads/torrents && rtorrent"
-alias torrent="cd /home/nathias/Downloads/torrents && rtorrent"
+tr() {
+  cd /home/nathias/Downloads/torrents || return
+  rtorrent
+}
 alias sub="subliminal download -l en"
 alias art="sacad"
 alias weather="curl wttr.in"
@@ -155,21 +152,13 @@ alias diff="diff --color=auto"
 alias tree="eza -TRL 3"
 alias roots=" eza -D -TRL 500"
 alias bpy="bpython -q"
-alias fn="firefox"
-alias reddit="rtv --enable-media"
-alias twitch="twitch-curses"
-alias twitter="turses"
+alias fn="firefox-nightly"
 alias email="neomutt"
-#alias feh='feh -B \"#1c1c1c\"'
 alias mpv='mpv'
 alias scrot="scrot  /home/nathias/Pictures/Screenshots/%b%d_%H%M%S.png -d 5"
 alias youtube="mpsyt"
-# copy to clipboard, ctrl+c, ctrl+shift+c
-alias ccopy='xclip -selection clipboard'
-# paste from clipboard, ctrl+v, ctrl+shift+v
-alias ppaste='xclip -selection clipboard -o'
-# paste from highlight, middle click, shift+insert
-alias sselect='xclip -selection primary -o'	
+alias ccopy='wl-copy'
+alias ppaste='wlc-paste'
 alias awsx="source _awsx"
 alias remixfix="lsof -i :8002"
 alias jackfix="sudo hda-verb /dev/snd/hwC0D0 0x1d SET_PIN_WIDGET_CONTROL 0x0"
@@ -178,7 +167,8 @@ alias neovim="nvim"
 alias snow="xsnow"
 alias prepare="gopreload-prepare"
 alias b="bun"
-
+alias dstart='systemctl start docker'
+alias dstop='systemctl stop docker.socket docker.service'
 
 #       ████████████
 #      ██ ◖COLORS◗ ██
@@ -216,16 +206,12 @@ eval $(dircolors -b $HOME/.dircolors)
 export EDITOR="nvim"
 export OPENER='rifle'
 export VISUAL="nvim"
-export BROWSER="firefox"
+export BROWSER="firefox-nightly"
 export BROWSERCLI=w3m
-source /usr/share/gdb
 source ~/.zsh_plugins.sh
-source /usr/share/gdb
-export PATH="$PATH":"$HOME/.emacs.d/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/Scripts:$PATH"
 export PATH=/home/nathias/.local/bin:$PATH
-export SSH_KEY_PATH="~/.ssh/rsa_id"
 export BROWSERCLI=w3m
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -233,52 +219,8 @@ export BROWSERCLI=w3m
 eval "$(zoxide init zsh)"
 # fnm
 export PATH=/home/nathias/.fnm:$PATH
-eval "`fnm env --multi`"
 export AWS_REGION="eu-west-1"
-export PATH="/home/nathias/.local/share/solana/install/active_release/bin:$PATH"
 eval "$(direnv hook zsh)"
-
-
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec startx
-fi
-
-
-# diffc - diff commands
-# - allows to call as: diffc 'command one' 'command two'
-#   instead of:        diff  <(command one) <(command two)
-#   (Just to save typing a few characters. Lol I'm a lazy programmer)
-function diffc () {
-  if [[ "$#" != "2" ]]; then
-    echo "diffc requires two arguments"
-    return 1
-  fi
-
-  local command=$(printf 'diff <( %s ) <( %s )' "$1" "$2")
-  echo $command
-  eval $command
-}
-
-# diffh - diff history
-# - make a diff of the output of the last two commands in the shell history
-function diffh () {
-  # first one is 2nd to last. second is last
-  # remove preceeding spaces
-  local first=$(fc -ln -2 -2)
-  local second=$(fc -ln -1 -1)
-
-  # print and run diff
-  local command=$(printf 'diff <( %s ) <( %s )' "${first}" "${second}")
-  echo $command
-  eval $command
-
-  local error_code=$?
-
-  # replace this 'diffh' entry in history with the command 
-  history -s "$(echo $command)"
-  
-  return $error_code
-}
 
 # pnpm
 export PNPM_HOME="/home/nathias/.local/share/pnpm"
@@ -288,7 +230,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 source /etc/profile.d/google-cloud-cli.sh
-
-if [ -e /home/nathias/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nathias/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
 export PATH="/home/nathias/.bun/bin:$PATH"
+
+
+source /home/nathias/.config/broot/launcher/bash/br
+

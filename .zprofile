@@ -2,7 +2,23 @@
 if [[ -z $DISPLAY && $(tty) = /dev/tty1 ]]; then
   exec Hyprland
 fi
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    eval "$(ssh-agent -s)"
+
+
+SSH_ENV="$HOME/.ssh/agent-environment"
+
+function start_agent {
+    echo "Starting ssh-agent..."
+    ssh-agent -s | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    ssh-add ~/.ssh/github
+}
+
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    ps -p $SSH_AGENT_PID > /dev/null || {
+        start_agent
+    }
+else
+    start_agent
 fi
-ssh-add -l > /dev/null || ssh-add ~/.ssh/github
