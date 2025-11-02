@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Lightview
+Exec=lightview %U
+Terminal=false
+Type=Application
+MimeType=image/jpeg;image/png;image/gif;image/bmp;image/webp;image/tiff;
+Categories=Graphics;Viewer;
+StartupNotify=true
+

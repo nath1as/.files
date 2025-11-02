@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=imv
+GenericName=Image Viewer
+Comment=View images
+Exec=imv %U
+Terminal=false
+Type=Application
+Categories=Graphics;Viewer;GTK;
+MimeType=image/jpeg;image/png;image/gif;image/bmp;image/webp;image/tiff;
+StartupNotify=true

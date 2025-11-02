@@ -1,0 +1,11 @@
+[MIME Cache]
+application/epub+zip=foliate.desktop;
+application/pdf=zathura.desktop;
+application/postscript=zathura.desktop;
+image/bmp=imv.desktop;lightview.desktop;
+image/gif=imv.desktop;lightview.desktop;
+image/jpeg=imv.desktop;lightview.desktop;
+image/png=imv.desktop;lightview.desktop;
+image/tiff=imv.desktop;lightview.desktop;
+image/webp=imv.desktop;lightview.desktop;
+image/x-djvu=zathura.desktop;
