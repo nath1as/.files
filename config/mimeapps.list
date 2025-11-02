@@ -1,0 +1,36 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Nightly-6VAAF3.desktop
+x-scheme-handler/https=userapp-Nightly-6VAAF3.desktop
+x-scheme-handler/chrome=userapp-Nightly-6VAAF3.desktop
+text/html=userapp-Nightly-6VAAF3.desktop
+application/x-extension-htm=userapp-Nightly-6VAAF3.desktop
+application/x-extension-html=userapp-Nightly-6VAAF3.desktop
+application/x-extension-shtml=userapp-Nightly-6VAAF3.desktop
+application/xhtml+xml=userapp-Nightly-6VAAF3.desktop
+application/x-extension-xhtml=userapp-Nightly-6VAAF3.desktop
+application/x-extension-xht=userapp-Nightly-6VAAF3.desktop
+x-scheme-handler/discord=vesktop.desktop
+
+image/png=lightview.desktop
+image/jpeg=lightview.desktop
+image/jpg=lightview.desktop
+image/gif=lightview.desktop
+image/bmp=lightview.desktop
+image/webp=lightview.desktop
+image/tiff=lightview.desktop
+application/epub+zip=foliate.desktop
+application/pdf=zathura.desktop
+application/x-mobipocket-ebook=foliate.desktop
+application/azw3=foliate.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Nightly-6VAAF3.desktop;
+x-scheme-handler/https=userapp-Nightly-6VAAF3.desktop;
+x-scheme-handler/chrome=userapp-Nightly-6VAAF3.desktop;
+text/html=userapp-Nightly-6VAAF3.desktop;
+application/x-extension-htm=userapp-Nightly-6VAAF3.desktop;
+application/x-extension-html=userapp-Nightly-6VAAF3.desktop;
+application/x-extension-shtml=userapp-Nightly-6VAAF3.desktop;
+application/xhtml+xml=userapp-Nightly-6VAAF3.desktop;
+application/x-extension-xhtml=userapp-Nightly-6VAAF3.desktop;
+application/x-extension-xht=userapp-Nightly-6VAAF3.desktop;
