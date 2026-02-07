@@ -103,7 +103,6 @@ export SPACESHIP_ASYNC_SHOW=false
 #       █████████████
 #
 alias sudo="/usr/bin/doas"
-alias sudoedit='doas vim'
 alias g="git"
 alias r="ranger"
 alias r="yazi"
@@ -113,7 +112,6 @@ alias l="eza"
 alias y="paru"
 alias m="man"
 alias t="tig"
-alias k="killall"
 alias gr="rg --pretty --color=always"
 alias zt="zathura"
 alias yt="ytfzf -t"
@@ -123,10 +121,10 @@ alias aic="ascii-image-converter"
 alias mpp='echo "Matija Potočnik Pribošič" | ccopy'
 alias lsf="ls -d */"
 alias gemini="amfora"
-tr() {
-  cd /home/nathias/Downloads/torrents || return
-  rtorrent
-}
+alias matrix="iamb"
+alias music="rmpc"
+alias tr="stig"
+alias torrent="stig"
 alias sub="subliminal download -l en"
 alias art="sacad"
 alias weather="curl wttr.in"
@@ -156,6 +154,7 @@ alias fn="firefox-nightly"
 alias email="neomutt"
 alias mpv='mpv'
 alias scrot="scrot  /home/nathias/Pictures/Screenshots/%b%d_%H%M%S.png -d 5"
+alias screen="hyprshot --output-folder /home/nathias/Pictures/Screenshots --mode output"
 alias youtube="mpsyt"
 alias ccopy='wl-copy'
 alias ppaste='wlc-paste'
@@ -169,6 +168,23 @@ alias prepare="gopreload-prepare"
 alias b="bun"
 alias dstart='systemctl start docker'
 alias dstop='systemctl stop docker.socket docker.service'
+alias crypto="cointop"
+
+claude-home() {
+  CLAUDE_CONFIG_DIR="$HOME/.claude-home" claude "$@"
+}
+
+claude-rivero() {
+  CLAUDE_CONFIG_DIR="$HOME/.claude-rivero" \
+  CLAUDE_CODE_USE_VERTEX=1 \
+  CLOUD_ML_REGION="europe-west1" \
+  ANTHROPIC_VERTEX_PROJECT_ID="analytics-prototyping" \
+  ANTHROPIC_MODEL="claude-sonnet-4-5@20250929" \
+  claude "$@"
+}
+# rss russ ?
+# podcasti podliner castero
+# cointop
 
 #       ████████████
 #      ██ ◖COLORS◗ ██

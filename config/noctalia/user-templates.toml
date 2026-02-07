@@ -1,5 +1,7 @@
 [config]
 
+[templates]
+
 # User-defined templates
 # Add your custom templates below
 # Example:
@@ -12,5 +14,4 @@
 #[templates.placeholder]
 #input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/MatugenTemplates/noctalia.json"
 #output_path = "/home/nathias/.cache/noctalia/placeholder.json"
-
 
