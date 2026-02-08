@@ -227,7 +227,7 @@ return {
   -- },
   {
     "OXY2DEV/markview.nvim",
-    lazy = true,
+    lazy = false,
   },
   {
     "rcarriga/nvim-notify",

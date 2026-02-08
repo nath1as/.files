@@ -8,6 +8,7 @@ vim.g.vim_svelte_plugin_load_full_syntax = 1
 vim.g.mkdp_auto_start = 1
 vim.g.mkdp_auto_close = 1
 vim.loader.enable()
+vim.opt.mouse = ""
 
 local o = vim.opt
 
